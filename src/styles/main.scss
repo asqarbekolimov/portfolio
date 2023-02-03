@@ -1,21 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: #191919;
 }
-.navbar li, .social-icon img{
+.navbar li,
+.social-icon img {
   cursor: pointer;
 }
-.right {.img{
-  img{
-    border-radius: 50%;
+.right {
+  .img {
+    img {
+      border-radius: 50%;
+    }
   }
-}}
+}
+.name {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.link {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+}
