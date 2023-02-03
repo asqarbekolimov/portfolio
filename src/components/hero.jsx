@@ -3,7 +3,7 @@ import { coder } from "../assets";
 
 function Hero() {
   return (
-    <div className=" section flex md:justify-between justify-start gap-5 md:flex-row flex-col  items-center md:py-40 py-10 sm:px-36 px-10 text-white">
+    <div className=" section flex md:justify-between justify-start gap-5 md:flex-row flex-col-reverse  items-center md:py-40 py-10 sm:px-36 px-10 text-white">
       <div className="left flex justify-start flex-col">
         <h1 className="text-5xl font-bold">
           Hi 👋, <br /> My Name is
