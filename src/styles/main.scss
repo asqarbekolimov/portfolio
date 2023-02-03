@@ -11,6 +11,15 @@
 body {
   background-color: #191919;
 }
+.navbarActive {
+  width: 100%;
+  animation: slide-sidebar 0.5s cubic-bezier(0.52, 0.46, 0.45, 0.94) both;
+  background-color: #191919;
+  li {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+}
 .navbar li,
 .social-icon img {
   cursor: pointer;
@@ -31,4 +40,12 @@ body {
 .link {
   border-bottom: 3px solid;
   border-image: linear-gradient(45deg, purple, orange) 1;
+}
+@keyframes slide-sidebar {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
