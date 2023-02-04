@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { github, linkedin, Logo, menuBurger, twitter, xIcon } from "../assets";
 
 function Navbar() {
@@ -12,15 +13,27 @@ function Navbar() {
   return (
     <header className="py-8 md:px-36 px-6">
       <div className=" flex justify-between items-center m-auto text-secondary">
-        <img src={Logo} alt="" />
+        <Link to={"/"}>
+          <img src={Logo} alt="" />
+        </Link>
         <ul
           className={` navbar active  md:flex hidden flex-row  gap-8 items-center `}
         >
-          <li>Home</li>
-          <li>About</li>
-          <li>Tech Stack</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li>
+            <Link to={"/technology"}>Tech Stack</Link>
+          </li>
+          <li>
+            <Link to={"/projects"}>Projects</Link>
+          </li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
           <div className=" flex gap-5 social-icon">
             <a href="https://github.com/asqarbekolimov" target={"_blank"}>
               <img src={github} alt="githubLogo" />
@@ -36,7 +49,7 @@ function Navbar() {
             </a>
           </div>
         </ul>
-        <div className="menuBurger absolute right-12">
+        <div className="menuBurger absolute right-8">
           <img
             className="w-9 md:hidden block cursor-pointer"
             onClick={() => menuHandler()}
@@ -53,11 +66,21 @@ function Navbar() {
         <ul
           className={` py-10 navbarActive  md:flex  flex-col  gap-10 items-center text-secondary`}
         >
-          <li>Home</li>
-          <li>About</li>
-          <li>Tech Stack</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li>
+            <Link to={"/technology"}>Tech Stack</Link>
+          </li>
+          <li>
+            <Link to={"/projects"}>Projects</Link>
+          </li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
           <div className=" flex gap-5 social-icon">
             <a href="https://github.com/asqarbekolimov" target={"_blank"}>
               <img src={github} alt="githubLogo" />

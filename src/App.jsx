@@ -1,13 +1,12 @@
 import { useState } from "react";
-import { Footer, Hero, Navbar } from "./components";
+import { Footer, Navbar } from "./components";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <AnimatedRoutes />
       <Footer />
     </div>
   );

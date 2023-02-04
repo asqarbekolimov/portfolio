@@ -1,26 +1,48 @@
 import React from "react";
 import { coder } from "../assets";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div className=" section flex md:justify-between justify-start gap-5 md:flex-row flex-col-reverse  items-center md:py-40 py-8 sm:px-36 px-12 text-white">
+    <motion.div
+      className=" section flex md:justify-between justify-start gap-5 md:flex-row flex-col-reverse  items-center md:py-40 py-8 sm:px-28 px-8 text-white"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+    >
       <div className="left flex justify-start flex-col">
-        <h1 className="text-5xl font-bold">
+        <motion.h1
+          className="text-5xl font-bold"
+          animate={{ x: 1 }}
+          transition={{ type: "spring", stiffness: 100 }}
+        >
           Hi 👋, <br /> My Name is
-        </h1>
-        <h1 className="name text-5xl my-2 font-poppins font-bold">
+        </motion.h1>
+        <motion.h1
+          className="name text-5xl my-2 font-poppins font-bold"
+          animate={{ x: 1 }}
+          transition={{ type: "spring", stiffness: 100 }}
+        >
           Asqarbek DEV
-        </h1>
-        <h2 className="text-5xl my-2 font-poppins font-bold">
+        </motion.h1>
+        <motion.h2
+          className="text-5xl my-2 font-poppins font-bold"
+          animate={{ x: 1 }}
+          transition={{ type: "spring", stiffness: 100 }}
+        >
           I build things for web
-        </h2>
+        </motion.h2>
       </div>
-      <div className="right">
+      <motion.div
+        className="right"
+        animate={{ x: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
         <div className="img">
           <img className="w-60" src={coder} alt="" />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
