@@ -110,5 +110,4 @@ function Navbar() {
     </header>
   );
 }
-// https://uz.linkedin.com/in/asqarbekolimov
 export default Navbar;
