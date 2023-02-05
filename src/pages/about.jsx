@@ -86,7 +86,9 @@ function About() {
           >
             <div className="flex justify-between items-center">
               <h1>{item.category}</h1>
-              <div>{item.status}</div>
+              <div className="bg-green-200 text-green-600 rounded-2xl text-sm font-poppins py-1 px-2">
+                {item.status}
+              </div>
             </div>
             <div className="flex justify-between pt-2">
               <div className="flex justify-between flex-col">
