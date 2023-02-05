@@ -61,10 +61,10 @@ function Navbar() {
       <div
         className={`${
           toggle ? "hidden" : "flex"
-        } lg:hidden flex p-12 absolute top-16 right-0 left-0  w-full`}
+        } lg:hidden flex pr-12 absolute top-0 bottom-0 left-0  w-60`}
       >
         <ul
-          className={` py-10 navbarActive  md:flex  flex-col  gap-10 items-center text-secondary`}
+          className={` py-10 px-10 navbarActive  md:flex  flex-col  gap-10 items-center text-secondary`}
         >
           <li>
             <Link onClick={() => menuHandler()} to={"/"}>
