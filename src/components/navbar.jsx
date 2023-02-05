@@ -67,19 +67,29 @@ function Navbar() {
           className={` py-10 navbarActive  md:flex  flex-col  gap-10 items-center text-secondary`}
         >
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link onClick={() => menuHandler()} to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <Link onClick={() => menuHandler()} to={"/about"}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to={"/technology"}>Tech Stack</Link>
+            <Link onClick={() => menuHandler()} to={"/technology"}>
+              Tech Stack
+            </Link>
           </li>
           <li>
-            <Link to={"/projects"}>Projects</Link>
+            <Link onClick={() => menuHandler()} to={"/projects"}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link onClick={() => menuHandler()} to={"/contact"}>
+              Contact
+            </Link>
           </li>
           <div className=" flex gap-5 social-icon">
             <a href="https://github.com/asqarbekolimov" target={"_blank"}>
