@@ -11,7 +11,9 @@ function About() {
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >
       <section>
-        <h1 className=" md:text-6xl text-4xl mb-7 font-bold">About Me</h1>
+        <h1 className=" md:text-5xl text-3xl mb-7 font-bold text-white">
+          About Me
+        </h1>
         <p className="font-poppins text-base lg:max-w-3xl">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -20,7 +22,7 @@ function About() {
         </p>
       </section>
       <section>
-        <h1 className="pt-10 md:text-6xl text-4xl font-bold">
+        <h1 className="md:text-5xl text-3xl my-7 font-bold text-white ">
           Work Experience
         </h1>
         {workExp.map((item) => (
@@ -78,7 +80,9 @@ function About() {
         ))}
       </section>
       <section>
-        <h1 className="pt-10 md:text-6xlxl text-4xl font-bold">Education</h1>
+        <h1 className="md:text-5xl text-3xl my-7 font-bold text-white">
+          Education
+        </h1>
         {education.map((item) => (
           <article
             className="pt-8 border-b-2 border-secondary  pb-5 "

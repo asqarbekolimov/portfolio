@@ -8,7 +8,7 @@ function Hero() {
       className=" section flex md:justify-between justify-start gap-5 md:flex-row flex-col-reverse  items-center md:py-40 py-8 sm:px-28 px-8 text-white"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
       <div className="left flex justify-start flex-col">
         <motion.h1
@@ -35,8 +35,8 @@ function Hero() {
       </div>
       <motion.div
         className="right"
-        animate={{ x: 1 }}
-        transition={{ type: "spring", stiffness: 100 }}
+        // animate={{ x: 1 }}
+        // transition={{ delay: 1 }}
       >
         <div className="img">
           <img className="w-60" src={coder} alt="" />
