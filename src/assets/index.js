@@ -25,6 +25,7 @@ import project3 from "./img/projectImg/project3.jpg";
 import project4 from "./img/projectImg/project4.jpg";
 import project5 from "./img/projectImg/project5.jpg";
 import project6 from "./img/projectImg/project6.jpg";
+import NotFoundImg from "./img/404.svg";
 
 export {
   Logo,
@@ -54,4 +55,5 @@ export {
   project4,
   project5,
   project6,
+  NotFoundImg,
 };

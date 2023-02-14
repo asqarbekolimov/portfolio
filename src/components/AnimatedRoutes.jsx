@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, Contact, Projects, Technology } from "../pages";
+import { About, Contact, NotFound, Projects, Technology } from "../pages";
 import Hero from "./hero";
 import { AnimatePresence } from "framer-motion";
 
@@ -14,6 +14,7 @@ function AnimatedRoutes() {
         <Route path="/technology" element={<Technology />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );
