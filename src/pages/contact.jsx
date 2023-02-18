@@ -36,7 +36,7 @@ function Contact() {
       className=""
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
     >
       <section>
         <div className="flex justify-center items-center   dark:shadow-slate-900">

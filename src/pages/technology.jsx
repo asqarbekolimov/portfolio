@@ -8,7 +8,7 @@ function Technology() {
       className="md:px-36 px-6  mt-16 text-secondary"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
     >
       <section>
         <h1 className=" md:text-5xl text-3xl mb-7 font-bold text-white">

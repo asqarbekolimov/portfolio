@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in-out;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -43,11 +44,14 @@ body {
   width: 100%;
   animation: slide-sidebar 0.5s cubic-bezier(0.52, 0.46, 0.45, 0.94) both;
   background-color: #191919;
-  z-index: 999;
   li {
     margin-bottom: 15px;
     cursor: pointer;
   }
+}
+.mini {
+  width: 100vw;
+  height: 100vh;
 }
 .navbar li,
 .social-icon img {
@@ -72,7 +76,7 @@ body {
 }
 @keyframes slide-sidebar {
   0% {
-    transform: translateY(100px);
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0);

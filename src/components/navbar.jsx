@@ -48,7 +48,7 @@ function Navbar() {
             </a>
           </div>
         </ul>
-        <div className="menuBurger absolute right-8">
+        <div className="menuBurger absolute  z-50 right-8">
           <img
             className="w-9 md:hidden block cursor-pointer"
             onClick={() => menuHandler()}
@@ -60,10 +60,10 @@ function Navbar() {
       <div
         className={`${
           toggle ? "hidden" : "flex"
-        } lg:hidden flex pr-12 absolute top-0 bottom-0 left-0  w-60`}
+        } mini lg:hidden flex  absolute top-0 bottom-0 left-0 z-40 w-60`}
       >
         <ul
-          className={` py-10 px-10 navbarActive  md:flex  flex-col  gap-10 items-center text-secondary`}
+          className={` py-10 px-10 navbarActive  flex  flex-col  gap-10 items-center justify-center  text-secondary`}
         >
           <li>
             <Link onClick={() => menuHandler()} to={"/"}>
