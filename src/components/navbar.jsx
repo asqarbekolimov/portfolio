@@ -8,13 +8,12 @@ function Navbar() {
   const menuHandler = () => {
     setToggle(!toggle);
   };
-  console.log(toggle);
 
   return (
     <header className="py-8 md:px-36 px-6">
       <div className=" flex justify-between items-center m-auto text-secondary">
         <Link to={"/"}>
-          <img src={Logo} alt="" />
+          <h1 className="logo">D€V</h1>
         </Link>
         <ul
           className={` navbar active  md:flex hidden flex-row  gap-8 items-center `}

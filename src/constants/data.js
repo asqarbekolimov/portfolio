@@ -24,34 +24,34 @@ import {
 export const workExp = [
   {
     id: 1,
-    work: "Frontend Web Developer",
+    work: "Frontend Web Mentor",
     company: {
       title: "Company Name here",
-      name: "Bengaluru",
+      name: "IT PARK",
     },
-    status: "Full Time",
-    date: "Sep 2021 - Dec 2021",
+    status: "Half Time",
+    date: "Sep 2020 - Dec 2021",
   },
   {
     id: 2,
-    work: "Frontend Web Developer",
+    work: "Frontend Web Freelancer",
     company: {
       title: "Company Name here",
-      name: "Bengaluru",
+      name: "Online",
     },
-    status: "Full Time",
-    date: "Sep 2021 - Dec 2021",
+    status: "Half Time",
+    date: "Jan 2023 - ∞",
   },
-  {
-    id: 3,
-    work: "Frontend Web Developer",
-    company: {
-      title: "Company Name here",
-      name: "Bengaluru",
-    },
-    status: "Full Time",
-    date: "Sep 2021 - Dec 2021",
-  },
+  // {
+  //   id: 3,
+  //   work: "Frontend Web Developer",
+  //   company: {
+  //     title: "Company Name here",
+  //     name: "Bengaluru",
+  //   },
+  //   status: "Full Time",
+  //   date: "Sep 2021 - Dec 2021",
+  // },
 ];
 
 export const education = [
@@ -59,21 +59,21 @@ export const education = [
     id: 1,
     category: "Frontend Web Developer",
     company: {
-      title: "Udemy, YouTube, Google, Medium",
-      name: "Online",
+      title: "IT PARK",
+      name: "Offline",
     },
     status: "Full Time",
-    date: "Sep 2021 - Dec 2021",
+    date: "Feb 2019 - Aug 2019",
   },
   {
     id: 2,
-    category: "Frontend Web Developer",
+    category: "MERN Stack Developer",
     company: {
-      title: "Udemy, YouTube, Google, Medium",
+      title: "Mohirdev, YouTube, Google",
       name: "Online",
     },
-    status: "Full Time",
-    date: "Sep 2021 - Dec 2021",
+    status: "Half Time",
+    date: "Mar 2022 - ∞",
   },
 ];
 export const techStack = [

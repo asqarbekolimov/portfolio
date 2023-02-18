@@ -31,6 +31,14 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: #191919;
 }
+.logo {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 36px;
+  font-weight: bold;
+}
 .navbarActive {
   width: 100%;
   animation: slide-sidebar 0.5s cubic-bezier(0.52, 0.46, 0.45, 0.94) both;

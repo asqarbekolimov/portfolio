@@ -30,7 +30,8 @@ function Hero() {
           animate={{ x: 1 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          I build things for web
+          I develop <span className="name">Web</span> sites <br />{" "}
+          <span className="name">Web</span> applications
         </motion.h2>
       </div>
       <motion.div

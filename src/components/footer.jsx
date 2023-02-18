@@ -7,7 +7,7 @@ function Footer() {
       <a className="mx-1 link" href="https://github.com/asqarbekolimov">
         ASQARBEK{" "}
       </a>{" "}
-      with <span className="name mx-1">Love </span> &
+      with
       <span className="name mx-1"> Coffee</span>
     </div>
   );

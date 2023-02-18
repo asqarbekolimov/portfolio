@@ -15,10 +15,11 @@ function About() {
           About Me
         </h1>
         <p className="font-poppins text-base lg:max-w-3xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          I am Askarbek Olimov. I live in Qiziltepa District, Navoi Region,
+          Republic of Uzbekistan. Currently, I am a student of the 11th grade of
+          the 8th general secondary school in Kyziltepa district. I am also a
+          Frontend (React.js) web developer. I am learning to program by taking
+          data from different platforms in the direction of MERN Stack
         </p>
       </section>
       <section>
