@@ -26,6 +26,8 @@ import project4 from "./img/projectImg/project4.jpg";
 import project5 from "./img/projectImg/project5.jpg";
 import project6 from "./img/projectImg/project6.jpg";
 import NotFoundImg from "./img/404.svg";
+import telegramIcon from "./img/telegramIcon.svg";
+import instaIcon from "./img/instaIcon.svg";
 
 export {
   Logo,
@@ -56,4 +58,6 @@ export {
   project5,
   project6,
   NotFoundImg,
+  telegramIcon,
+  instaIcon,
 };
