@@ -8,6 +8,8 @@ import { menuItems } from '@/constants';
 import { Button } from '@/components/ui/button';
 import { Open_Sans } from 'next/font/google';
 import Dropdown from '../dropdown/dropdown';
+import { CgMenuRightAlt } from 'react-icons/cg';
+
 const font = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
@@ -16,7 +18,6 @@ const font = Open_Sans({
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { HiOutlineX } from 'react-icons/hi';
-import { CgMenuRightAlt } from 'react-icons/cg';
 import { Fade } from 'react-awesome-reveal';
 import { MenuItemsProps } from '../../../type';
 
@@ -76,23 +77,21 @@ const Navbar = () => {
         <div
           onClick={() => setIsOpen((state) => !state)}
           className={` ${
-            isOpen && '!right-0 transform transition-all duration-500'
-          } absolute -right-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 bg-white/50 
-          px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 lg:hidden dark:bg-slate-900/50`}
+            isOpen && '!block transform transition-all duration-500'
+          } fixed bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 
+          bg-white/25 px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 dark:bg-slate-900/50 `}
         />
         <div
           className={` ${
-            isOpen && '!right-0 transform transition-all duration-500'
-          } absolute -right-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 bg-white px-3 
-          py-5 shadow-lg transition-all duration-500 md:w-80 lg:hidden dark:bg-slate-900`}
+            isOpen && '!right-0 !block transform transition-all duration-500'
+          } fixed bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 bg-white 
+          px-3 py-5 shadow-lg transition-all duration-500 md:w-80 dark:bg-slate-900`}
         >
-          <Fade>
-            <HiOutlineX
-              onClick={() => setIsOpen((state) => !state)}
-              className="absolute right-5 top-5 cursor-pointer text-emerald-400"
-              size={40}
-            />
-          </Fade>
+          <HiOutlineX
+            onClick={() => setIsOpen((state) => !state)}
+            className="absolute right-5 top-5 cursor-pointer text-emerald-400"
+            size={40}
+          />
           <div className="mt-10 flex flex-col items-start  justify-start space-y-1">
             {menuItems.map((item: MenuItemsProps, idx: number) => (
               <Link
