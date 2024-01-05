@@ -6,15 +6,17 @@ import { FaDev } from 'react-icons/fa';
 import Link from 'next/link';
 import { menuItems } from '@/constants';
 import { Button } from '@/components/ui/button';
-import { Fira_Code } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 import Dropdown from '../dropdown/dropdown';
-const font = Fira_Code({
+const font = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
+  weight: ['400', '500', '700'],
 });
 import { SlMenu } from 'react-icons/sl';
 import { useEffect, useState } from 'react';
 import { HiOutlineX } from 'react-icons/hi';
+import { CgMenuRightAlt } from 'react-icons/cg';
 import { Fade } from 'react-awesome-reveal';
 
 const Navbar = () => {
@@ -68,51 +70,54 @@ const Navbar = () => {
           <DarkMode />
         </div>
       </Fade>
-      {isOpen && (
-        <Fade>
-          <div
-            className={
-              ' absolute bottom-0 right-0 top-0 z-50 h-screen w-full space-x-4 bg-white px-3 py-5 shadow-lg md:w-80 dark:bg-slate-900'
-            }
-          >
+
+      <Fade className="lg:hidden">
+        <div
+          className={` ${
+            isOpen && '!right-0 transform transition-all duration-500'
+          } absolute -right-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 bg-white px-3 
+          py-5 shadow-lg transition-all duration-500 md:w-80 lg:hidden dark:bg-slate-900`}
+        >
+          <Fade>
             <HiOutlineX
               onClick={() => setIsOpen((state) => !state)}
-              className="fixed right-5 top-5 cursor-pointer text-emerald-400"
+              className="absolute right-5 top-5 cursor-pointer text-emerald-400"
               size={40}
             />
-            <div className="mt-10 flex flex-col items-start  justify-start space-y-1">
-              {menuItems.map((item, idx) => (
-                <Link
-                  href={item.path}
-                  key={item.id}
-                  onClick={() => setIsOpen(false)}
+          </Fade>
+          <div className="mt-10 flex flex-col items-start  justify-start space-y-1">
+            {menuItems.map((item, idx) => (
+              <Link
+                href={item.path}
+                key={item.id}
+                onClick={() => setIsOpen(false)}
+              >
+                <Button
+                  variant={'ghost'}
+                  className="flex  w-full justify-start"
                 >
-                  <Button
-                    variant={'ghost'}
-                    className="flex  w-full justify-start"
-                  >
-                    <div>
-                      <span className="text-emerald-400">0{idx + 1}.</span>
-                      <span
-                        className={`${
-                          pathname === item.path ? '!text-emerald-400' : ''
-                        } font-medium text-slate-400`}
-                      >
-                        {' '}
-                        {item.title}
-                      </span>
-                    </div>
-                  </Button>
-                </Link>
-              ))}
-            </div>
-            <DarkMode className="my-2" />
-            <Dropdown />
+                  <div>
+                    <span className="text-emerald-400">0{idx + 1}.</span>
+                    <span
+                      className={`${
+                        pathname === item.path ? '!text-emerald-400' : ''
+                      } font-medium text-slate-400`}
+                    >
+                      {' '}
+                      {item.title}
+                    </span>
+                  </div>
+                </Button>
+              </Link>
+            ))}
           </div>
-        </Fade>
-      )}
+          <DarkMode className="my-2" />
+          <Dropdown />
+        </div>
+      </Fade>
+
       <Fade className="block lg:hidden">
-        <SlMenu
+        <CgMenuRightAlt
           onClick={() => setIsOpen((state) => !state)}
           className="block cursor-pointer text-emerald-400 lg:hidden"
           size={30}
