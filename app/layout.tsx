@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-[#0a192f]`}>
+      <body className={`${inter.className} relative dark:bg-[#0a192f]`}>
         <NextTopLoader
           color="#2299DD"
           initialPosition={0.08}

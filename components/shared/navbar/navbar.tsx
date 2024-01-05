@@ -74,6 +74,13 @@ const Navbar = () => {
 
       <Fade className="lg:hidden">
         <div
+          onClick={() => setIsOpen((state) => !state)}
+          className={` ${
+            isOpen && '!right-0 transform transition-all duration-500'
+          } absolute -right-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 bg-white 
+          px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 lg:hidden dark:bg-slate-900/50`}
+        />
+        <div
           className={` ${
             isOpen && '!right-0 transform transition-all duration-500'
           } absolute -right-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 bg-white px-3 
