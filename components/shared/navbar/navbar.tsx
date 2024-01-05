@@ -13,11 +13,12 @@ const font = Open_Sans({
   display: 'swap',
   weight: ['400', '500', '700'],
 });
-import { SlMenu } from 'react-icons/sl';
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { HiOutlineX } from 'react-icons/hi';
 import { CgMenuRightAlt } from 'react-icons/cg';
 import { Fade } from 'react-awesome-reveal';
+import { MenuItemsProps } from '../../../type';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -51,7 +52,7 @@ const Navbar = () => {
           <FaDev size={50} />
         </Link>
         <div className={'hidden space-x-4 lg:flex'}>
-          {menuItems.map((item, idx) => (
+          {menuItems.map((item: MenuItemsProps, idx: number) => (
             <Link href={item.path} key={item.id}>
               <Button variant={'ghost'}>
                 <span className="text-emerald-400">0{idx + 1}.</span>
@@ -86,7 +87,7 @@ const Navbar = () => {
             />
           </Fade>
           <div className="mt-10 flex flex-col items-start  justify-start space-y-1">
-            {menuItems.map((item, idx) => (
+            {menuItems.map((item: MenuItemsProps, idx: number) => (
               <Link
                 href={item.path}
                 key={item.id}

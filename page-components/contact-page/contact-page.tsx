@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import TextForm from '@/components/shared/form/text-form';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';

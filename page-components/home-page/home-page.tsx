@@ -20,7 +20,7 @@ export default function HomePageComponent() {
           Hi, my name is
         </h1>
         <h2
-          className={`${inter.className} mt-5 inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl`}
+          className={`${inter.className} animate-text-gradient mt-5 inline-flex bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl`}
         >
           Asqarbek Olimov.
         </h2>

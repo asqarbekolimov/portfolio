@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import { ProjectsProps } from '@/type';
 import Image from 'next/image';
 import { FC, useState } from 'react';
