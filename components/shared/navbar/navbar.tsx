@@ -59,10 +59,10 @@ const Navbar = () => {
           {menuItems.map((item: MenuItemsProps, idx: number) => (
             <Link href={item.path} key={item.id}>
               <Button variant={'ghost'}>
-                <span className="text-emerald-400">0{idx + 1}.</span>
+                <span className="text-[#00b533]">0{idx + 1}.</span>
                 <span
                   className={`${
-                    pathname === item.path ? '!text-emerald-400' : ''
+                    pathname === item.path ? '!text-[#00b533]' : ''
                   } font-medium text-slate-400`}
                 >
                   {t(item.title, { ns: 'index' })}
@@ -91,7 +91,7 @@ const Navbar = () => {
         >
           <HiOutlineX
             onClick={() => setIsOpen((state) => !state)}
-            className="absolute right-5 top-5 cursor-pointer text-emerald-400"
+            className="absolute right-5 top-5 cursor-pointer text-[#00b533]"
             size={40}
           />
           <div className="mt-10 flex flex-col items-start  justify-start space-y-1">

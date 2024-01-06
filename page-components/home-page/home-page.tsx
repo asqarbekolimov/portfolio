@@ -18,7 +18,7 @@ export default function HomePageComponent() {
   return (
     <section className="m-auto w-full max-w-[1000px]">
       <Fade direction="down" triggerOnce={true}>
-        <h1 className={`${fira_code.className} text-emerald-400`}>
+        <h1 className={`${fira_code.className} text-[#00b533]`}>
           {t('my_name_is', { ns: 'index' })}
         </h1>
         <h2
@@ -39,17 +39,14 @@ export default function HomePageComponent() {
           className={`${inter.className} my-8 max-w-2xl leading-6 tracking-wider text-slate-400`}
         >
           {t('short_about', { ns: 'index' })}
-          <Link
-            href={'/about'}
-            className="ml-1 text-emerald-300 hover:underline"
-          >
+          <Link href={'/about'} className="ml-1 text-[#00b533] hover:underline">
             {t('more', { ns: 'index' })}...
           </Link>
         </p>
-        <div className="shadow-mdhover:border-transparent inline-block cursor-pointer rounded border-2 border-emerald-400 px-8  py-1">
+        <div className="shadow-mdhover:border-transparent inline-block cursor-pointer rounded border-2 border-[#00b533] px-8  py-1">
           <Button
             variant={'default'}
-            className="bg-transparent text-base text-emerald-400 hover:bg-transparent"
+            className="bg-transparent text-base text-[#00b533] hover:bg-transparent"
           >
             {t('resume', { ns: 'index' })}
           </Button>

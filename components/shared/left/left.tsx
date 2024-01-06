@@ -14,7 +14,7 @@ const Left = () => {
             <Link href={'https://github.com/asqarbekolimov'}>
               <LuGithub
                 size={25}
-                className="duration-200 hover:text-green-500"
+                className="duration-200 hover:text-[#00b533]"
               />
             </Link>
           </li>
@@ -22,7 +22,7 @@ const Left = () => {
             <Link href={'https://www.instagram.com/mr_asqarbek/'}>
               <LuInstagram
                 size={25}
-                className="duration-200 hover:text-green-500"
+                className="duration-200 hover:text-[#00b533]"
               />
             </Link>
           </li>
@@ -30,7 +30,7 @@ const Left = () => {
             <Link href={'https://www.linkedin.com/in/asqarbekolimov/'}>
               <LuLinkedin
                 size={25}
-                className="duration-200 hover:text-green-500"
+                className="duration-200 hover:text-[#00b533]"
               />
             </Link>
           </li>
@@ -38,7 +38,7 @@ const Left = () => {
             <Link href={'https://twitter.com/asqarbekdev'}>
               <LuTwitter
                 size={25}
-                className="duration-200 hover:text-green-500"
+                className="duration-200 hover:text-[#00b533]"
               />
             </Link>
           </li>
@@ -46,7 +46,7 @@ const Left = () => {
             <Link href={'https://asqarb3k.t.me'}>
               <PiTelegramLogo
                 size={25}
-                className="duration-200 hover:text-green-500"
+                className="duration-200 hover:text-[#00b533]"
               />
             </Link>
           </li>

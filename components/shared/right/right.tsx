@@ -14,7 +14,7 @@ const Right = () => {
       <div className="flex flex-col items-center gap-5 text-xl font-medium after:m-auto after:block after:h-[110px] after:w-[1px] after:bg-slate-400">
         <Fade direction="down">
           <Link
-            className="vertical-writing-mode "
+            className="vertical-writing-mode transition-all duration-300 hover:text-[#00b533]"
             href={'mailto:asqarbekdev@gmail.com'}
           >
             asqarbekdev@gmail.com

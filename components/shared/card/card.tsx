@@ -13,7 +13,7 @@ const Card = ({ project, index }: ProjectProps) => {
     >
       <div
         style={{ top: `calc(0% + ${index * 25}px)` }}
-        className="mx-w-[1000px] relative flex h-full max-h-[500px] w-full origin-top flex-col rounded-md border bg-slate-900 p-10"
+        className="mx-w-[1000px] relative flex h-full max-h-[500px] w-full origin-top flex-col rounded-md border bg-white p-7 shadow-md dark:bg-slate-900"
       >
         <div className="flex h-full flex-col gap-10 pb-10 ">
           {/* img container */}

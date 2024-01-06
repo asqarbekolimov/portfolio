@@ -27,7 +27,7 @@ const Dropdown = () => {
           <MdGTranslate size={20} />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 bg-slate-900">
+      <DropdownMenuContent className="w-56 bg-white dark:bg-slate-900">
         <DropdownMenuLabel>{t('choose_lng')}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
