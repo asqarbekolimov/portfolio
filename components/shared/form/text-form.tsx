@@ -16,6 +16,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Fade } from 'react-awesome-reveal';
+import { useTranslation } from 'react-i18next';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -33,6 +34,7 @@ const formSchema = z.object({
 });
 
 const TextForm = () => {
+  const { t } = useTranslation();
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -62,9 +64,9 @@ const TextForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your Name</FormLabel>
+                <FormLabel>{t('your_name', { ns: 'index' })}</FormLabel>
                 <FormControl>
-                  <Input placeholder="Name" {...field} />
+                  <Input placeholder={t('name', { ns: 'index' })} {...field} />
                 </FormControl>
 
                 <FormMessage />
@@ -76,7 +78,7 @@ const TextForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>{t('email', { ns: 'index' })}</FormLabel>
                 <FormControl>
                   <Input placeholder="user@mail.com" {...field} />
                 </FormControl>
@@ -89,15 +91,18 @@ const TextForm = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message</FormLabel>
+                <FormLabel>{t('message', { ns: 'index' })}</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Enter your message..." {...field} />
+                  <Textarea
+                    placeholder={t('enter_msg', { ns: 'index' })}
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">{t('submit', { ns: 'index' })}</Button>
         </form>
       </Form>
     </Fade>

@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import { MdGTranslate } from 'react-icons/md';
 
 const Dropdown = () => {
   const { i18n } = useTranslation();
@@ -18,38 +19,36 @@ const Dropdown = () => {
   const [position, setPosition] = useState<string | undefined>(
     i18n.resolvedLanguage,
   );
-
+  const { t } = useTranslation();
   return (
-    <div className="w-28">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="bg-transparent">
-            {position}
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 bg-slate-900">
-          <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-            {language.map((lang) => {
-              const onLanguage = (lng: string) => {
-                i18n.changeLanguage(lng);
-              };
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" className="bg-transparent">
+          <MdGTranslate size={20} />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56 bg-slate-900">
+        <DropdownMenuLabel>{t('choose_lng')}</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+          {language.map((lang) => {
+            const onLanguage = (lng: string) => {
+              i18n.changeLanguage(lng);
+            };
 
-              return (
-                <DropdownMenuRadioItem
-                  key={lang.lng}
-                  value={lang.lng}
-                  onClick={() => onLanguage(lang.lng)}
-                >
-                  {lang.name}
-                </DropdownMenuRadioItem>
-              );
-            })}
-          </DropdownMenuRadioGroup>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
+            return (
+              <DropdownMenuRadioItem
+                key={lang.lng}
+                value={lang.lng}
+                onClick={() => onLanguage(lang.lng)}
+              >
+                {lang.name}
+              </DropdownMenuRadioItem>
+            );
+          })}
+        </DropdownMenuRadioGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
