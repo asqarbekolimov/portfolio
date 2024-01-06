@@ -20,6 +20,7 @@ import { useEffect, useState } from 'react';
 import { HiOutlineX } from 'react-icons/hi';
 import { Fade } from 'react-awesome-reveal';
 import { MenuItemsProps } from '../../../type';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -40,6 +41,8 @@ const Navbar = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <div
@@ -62,8 +65,7 @@ const Navbar = () => {
                     pathname === item.path ? '!text-emerald-400' : ''
                   } font-medium text-slate-400`}
                 >
-                  {' '}
-                  {item.title}
+                  {t(item.title, { ns: 'index' })}
                 </span>
               </Button>
             </Link>
@@ -111,7 +113,7 @@ const Navbar = () => {
                       } font-medium text-slate-400`}
                     >
                       {' '}
-                      {item.title}
+                      {t(item.title, { ns: 'index' })}
                     </span>
                   </div>
                 </Button>
