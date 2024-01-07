@@ -79,22 +79,22 @@ const Navbar = () => {
         <div
           onClick={() => setIsOpen((state) => !state)}
           className={` ${
-            isOpen && '!block transform transition-all duration-500'
-          } fixed bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 
-          bg-white/25 px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 dark:bg-slate-900/50 `}
+            isOpen && '!block transform  transition-all duration-500'
+          } absolute bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 
+         bg-white/25 px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 dark:bg-slate-900/50`}
         />
         <div
           className={` ${
-            isOpen && '!right-0 !block transform transition-all duration-500'
-          } fixed bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 bg-white 
-          px-3 py-5 shadow-lg transition-all duration-500 md:w-80 dark:bg-slate-900`}
+            isOpen && '!left-0 !block transform transition-all duration-500'
+          } absolute -left-full bottom-0 top-0 z-50 h-screen w-full transform space-x-4 
+          bg-white px-3 py-5 shadow-lg transition-all duration-500 md:w-80 dark:bg-slate-900`}
         >
           <HiOutlineX
             onClick={() => setIsOpen((state) => !state)}
             className="absolute right-5 top-5 cursor-pointer text-[#00b533]"
             size={40}
           />
-          <div className="mt-10 flex flex-col items-start  justify-start space-y-1">
+          <div className="mt-14 flex flex-col items-stretch justify-center space-y-1 pr-5">
             {menuItems.map((item: MenuItemsProps, idx: number) => (
               <Link
                 href={item.path}
@@ -102,14 +102,14 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 <Button
-                  variant={'ghost'}
+                  variant={`${pathname === item.path ? 'secondary' : 'ghost'}`}
                   className="flex  w-full justify-start"
                 >
                   <div>
-                    <span className="text-emerald-400">0{idx + 1}.</span>
+                    <span className="text-[#00b533]">0{idx + 1}.</span>
                     <span
                       className={`${
-                        pathname === item.path ? '!text-emerald-400' : ''
+                        pathname === item.path ? '!text-[#00b533]' : ''
                       } font-medium text-slate-400`}
                     >
                       {' '}
@@ -120,17 +120,21 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <DarkMode className="my-2" />
-          <Dropdown />
         </div>
       </Fade>
 
       <Fade className="block lg:hidden">
-        <CgMenuRightAlt
-          onClick={() => setIsOpen((state) => !state)}
-          className="block cursor-pointer text-emerald-400 lg:hidden"
-          size={30}
-        />
+        <div className="flex items-center gap-3">
+          <Dropdown />
+          <DarkMode className="my-2" />
+          <Button className="border bg-transparent hover:bg-transparent">
+            <CgMenuRightAlt
+              onClick={() => setIsOpen((state) => !state)}
+              className="block cursor-pointer text-[#00b533] lg:hidden"
+              size={30}
+            />
+          </Button>
+        </div>
       </Fade>
     </div>
   );

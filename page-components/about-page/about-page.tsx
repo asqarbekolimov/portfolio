@@ -212,7 +212,7 @@ const AboutPageComponents = () => {
                   </span>
                   -
                   <span className="dark:text-slate-100">
-                    {t('sept_2021', { ns: 'aboutq' })}
+                    {t('sept_2021', { ns: 'about' })}
                   </span>
                 </div>
                 <h3 className="mb-5 mt-5 text-xl font-semibold text-slate-300">
