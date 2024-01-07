@@ -1,9 +1,10 @@
 export interface ProjectsProps {
   title: string;
   description: string;
-  src: string;
+  skills: string;
   link: string;
-  color: string;
+  img: string;
+  repo: string;
 }
 
 export interface ProjectProps {

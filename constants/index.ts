@@ -155,27 +155,30 @@ export const CourseraSkills = [
 ];
 export const projects = [
   {
-    title: 'Matthias Leidinger',
-    description:
-      'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
-    src: 'rock.jpg',
-    link: 'https://images.unsplash.com/photo-1554310603-d39d43033735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    color: 'bg-red-600',
+    title: 'pr1_title',
+    description: 'pr1_descr',
+    link: 'https://subscription.asqarbekdev.uz',
+    img: '/projects/1.png',
+    skills:
+      'NextJS, TypeScript, NodeJS, ExpressJS, React, Context, Zustand, Stripe, Firebase, Payment, Tailwind CSS',
+    repo: 'https://github.com/asqarbekolimov/subscription-web-app',
   },
   {
-    title: 'Clément Chapillon',
-    description:
-      'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, ’).',
-    src: 'tree.jpg',
-    link: 'https://images.unsplash.com/photo-1637070875173-1ecab5fff748?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    color: 'bg-red-500',
+    title: 'pr2_title',
+    description: 'pr2_descr',
+    link: 'https://edu.asqarbekdev.uz/',
+    img: '/projects/2.png',
+    skills:
+      'TypeScript, NextJs, Framer motion, NProgress, Module CSS, High Order Component, UI Components',
+    repo: 'https://github.com/asqarbekolimov/education',
   },
   {
-    title: 'Zissou',
-    description:
-      'Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, ',
-    src: 'water.jpg',
-    link: 'https://media.istockphoto.com/id/1683748366/photo/bay-bridge-and-san-francisco-skyline.webp?s=2048x2048&w=is&k=20&c=5wsWKVQWQTTX6t4ais_yEkx3BSpm0vVM87eyIqVWjo0=',
-    color: 'bg-blue-900',
+    title: 'pr3_title',
+    description: 'pr3_descr',
+    link: 'https://www.asqarbekdev.uz/',
+    img: '/projects/4.png',
+    skills:
+      'TypeScript, NextJs, React Reval, I18Next, Shadcn UI, Tailwind CSS, Husky, Lint, Prettier',
+    repo: 'https://github.com/asqarbekolimov/portfolio/',
   },
 ];

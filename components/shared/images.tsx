@@ -14,10 +14,10 @@ const CustomImage: FC<Props> = ({ project, fill }) => {
 
   return (
     <Image
-      src={project.link}
+      src={project.img}
       alt={project.title}
       fill={fill}
-      className={`object-cover duration-300 ease-in-out group-hover:opacity-75 ${
+      className={`object-contain duration-300 ease-in-out group-hover:opacity-75 ${
         isLoading
           ? 'scale-110  blur-2xl grayscale'
           : 'scale-100 rounded-md  blur-0 grayscale-0'
