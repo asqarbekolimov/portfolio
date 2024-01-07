@@ -1,0 +1,19 @@
+{
+  "about_me":"ABOUT ME",
+  "about_description":"Hello there. my name is Askarbek. I live in Uzbekistan. Currently, I am a frontend (Reactjs) developer with more than a year of experience and I am learning additional backend (Node.js, Nestjs). In addition, I am learning mobile programming for ios and android in React Native.",
+  "prg_lng":"Programming Languages:",
+  "skills":"Skills:",
+  "see_course":"see course",
+  "see_cert":"see certificate",
+  "it_descr":"IT Park and Udacity were the first to start programming with online classes 'One Million Uzbekcoders'. Then I learned 6 games Frontend web programming at IT Park. During the course, I learned to create websites and landing page design and UI, work with a team",
+  "june_2020":"June 2020",
+  "feb_2021":"February 2021",
+  "mohir_descr":"In order to further develop my knowledge in the field of programming and web programming, I attended a 7-month online course on MERN Stack created by MohirDev. During the course, I learned how to create complex UI of web applications, integrate frontend project with backend with different APIs, and create fullstack web applications and websites. The purpose of my purchase of the online course was to find a solution to the bugs that appear in the communication and projects of online teams",
+  "march_2021":"March 2021",
+  "sept_2021":"September 2021",
+  "sammi_descr":"I joined Sammi's bootcamp to work with startup projects, integrate payment systems into projects, and learn React.js Framework Next.js with Typescript. In the course, I created subscription projects with Stripe, worked with a complex grid system, learned various UI libraries, site structure systems, and created a platform for an online training center ...",
+  "june_2023":"June 2023",
+  "present":"Persent",
+  "coursera_descr":"I was very interested in writing JavaScript code and writing mobile apps, and I quickly completed Meta's React Native course on Coursera. During the course, I completed the 'Little Lemon' project to English",
+  "jan_2024":"January 2024"
+}

@@ -8,7 +8,7 @@ i18n
   .use(detector)
   .use(backend)
   .init({
-    ns: ['index'],
+    ns: ['index', 'about'],
     backend: { loadPath: '/locales/{{lng}}/{{ns}}.json' },
     fallbackLng: 'en',
     interpolation: {

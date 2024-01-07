@@ -20,7 +20,139 @@ export const menuItems = [
     path: '/contact',
   },
 ];
-
+export const Skills = [
+  {
+    name: 'JavaScript',
+  },
+  {
+    name: 'TypeScript',
+  },
+  {
+    name: 'React.js & Next.js',
+  },
+  {
+    name: 'React Native',
+  },
+  {
+    name: 'MERN Stack',
+  },
+  {
+    name: 'SEO',
+  },
+  {
+    name: 'HTML & CSS',
+  },
+  {
+    name: 'CSS Preprocessors',
+  },
+  {
+    name: 'UI Frameworks',
+  },
+  {
+    name: 'Responsive Design',
+  },
+  {
+    name: 'Stripe',
+  },
+  {
+    name: 'Deployment',
+  },
+  {
+    name: 'ChatGPT',
+  },
+  {
+    name: 'Communication',
+  },
+];
+export const ITParkSkills = [
+  {
+    name: 'JavaScript',
+  },
+  {
+    name: 'HTML & CSS',
+  },
+  {
+    name: 'SASS&SCSS',
+  },
+  {
+    name: 'Bootstrap',
+  },
+  {
+    name: 'Responsive Design',
+  },
+  {
+    name: 'Figma',
+  },
+  {
+    name: 'Communication',
+  },
+];
+export const MohirdevSkills = [
+  {
+    name: 'Reactjs',
+  },
+  {
+    name: 'JavaScript',
+  },
+  {
+    name: 'MongoDB',
+  },
+  {
+    name: 'Experss.js',
+  },
+  {
+    name: 'Node.js',
+  },
+  {
+    name: 'API',
+  },
+  {
+    name: 'Material UI',
+  },
+  {
+    name: 'Problem Solving',
+  },
+];
+export const SammiSkills = [
+  {
+    name: 'TypeScript',
+  },
+  {
+    name: 'Next.js',
+  },
+  {
+    name: 'TailwindCSS',
+  },
+  {
+    name: 'Chakra UI',
+  },
+  {
+    name: 'Stripe',
+  },
+  {
+    name: 'Firebase',
+  },
+  {
+    name: 'NextAuth',
+  },
+  {
+    name: 'Form Validation',
+  },
+  {
+    name: 'Git & Github',
+  },
+  {
+    name: 'Postman',
+  },
+  {
+    name: 'Vercel',
+  },
+];
+export const CourseraSkills = [
+  { name: 'React Native' },
+  { name: 'Expo Navigation' },
+  { name: 'React Native Components' },
+];
 export const projects = [
   {
     title: 'Matthias Leidinger',
