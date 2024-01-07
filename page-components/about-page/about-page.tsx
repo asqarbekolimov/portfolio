@@ -146,7 +146,7 @@ const AboutPageComponents = () => {
                 </div>
               </Fade>
               <Fade direction="up" triggerOnce={true}>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap gap-1">
                   <Button variant={'outline'} className="mt-5">
                     <Link
                       href={'https://it-park.uz/'}
@@ -230,7 +230,7 @@ const AboutPageComponents = () => {
                 </div>
               </Fade>
               <Fade direction="up" triggerOnce={true}>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap gap-1">
                   <Button variant={'outline'} className="mt-5">
                     <Link
                       href={'https://mohirdev.uz/'}
@@ -315,7 +315,7 @@ const AboutPageComponents = () => {
                 </div>
               </Fade>
               <Fade direction="up" triggerOnce={true}>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap gap-1">
                   <Button variant={'outline'} className="mt-5">
                     <Link
                       href={'https://sammi.ac/'}
@@ -389,7 +389,7 @@ const AboutPageComponents = () => {
                 </div>
               </Fade>
               <Fade direction="up" triggerOnce={true}>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap gap-1">
                   <Button variant={'outline'} className="mt-5">
                     <Link
                       href={'https://mohirdev.uz/'}
