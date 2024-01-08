@@ -14,7 +14,10 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   referrer: 'origin-when-cross-origin',
-  title: 'Asqarbek Olimov',
+  title: {
+    template: '%s | Asqarbek',
+    default: 'Asqarbek',
+  },
   description:
     'Askarbek Olimov`s portfolio website. Make your dream come true with programming.',
   authors: {
