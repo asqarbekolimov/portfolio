@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/icon.svg',
-    shortcut: '/dev.jpg',
+    shortcut: '/dev.png',
   },
   verification: {
     google: 'google',
@@ -72,16 +72,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Home Page',
+    title: 'Asqarbek`s Portfolio',
     description:
-      'Portfolio, projects, about developer, contact developer, Asqarbek Olimov`s Portfolio Website',
+      'Any fool can write code that a computer can understand. Good programmers write code that humans can understand',
     url: 'https://asqarbekdev.uz',
     siteName: 'Portfolio website',
     emails: 'info@asqarbekdev.uz',
 
     images: [
       {
-        url: 'https://asqarbekdev.uz/dev.jpg',
+        url: 'https://asqarbekdev.uz/dev.png',
         width: 1250,
         height: 800,
       },
