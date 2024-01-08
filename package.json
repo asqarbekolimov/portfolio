@@ -32,6 +32,8 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@studio-freight/lenis": "^1.0.33",
     "@types/nodemailer": "^6.4.14",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "emailjs-com": "^3.2.0",

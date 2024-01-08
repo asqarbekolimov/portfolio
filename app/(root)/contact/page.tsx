@@ -1,5 +1,11 @@
 import React from 'react';
 import ContactPageComponent from '@/page-components/contact-page/contact-page';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Page',
+  description: 'Proposal, application and developer contact.',
+};
 
 const ContactPage = () => {
   return <ContactPageComponent />;
