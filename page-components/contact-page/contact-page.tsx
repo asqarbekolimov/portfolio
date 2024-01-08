@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const ContactPageComponent = () => {
   const { t } = useTranslation();
   return (
-    <section className="flex w-full flex-col justify-between gap-8 md:flex-row">
+    <section className="flex w-full flex-col justify-between gap-8 pb-10 md:flex-row">
       <Fade direction="down" triggerOnce={true}>
         <div className="flex flex-col justify-between">
           <div className="mb-8">
@@ -30,10 +30,10 @@ const ContactPageComponent = () => {
             </Link>
             <Link
               className="flex items-center gap-5 rounded-md border-2 px-5 py-4 shadow hover:border-blue-700 hover:bg-blue-500/10"
-              href="mailto:asqarbekdev@gmail.com"
+              href="mailto:info@asqarbekdev.uz"
             >
               <HiMail className="text-blue-600" size={25} />{' '}
-              <span className="text-slate-400">asqarbekdev@gmail.com</span>
+              <span className="text-slate-400">info@asqarbekdev.uz</span>
             </Link>
             <Link
               className="flex items-center gap-5 rounded-md border-2 px-5 py-4 shadow hover:border-blue-700 hover:bg-blue-500/10"

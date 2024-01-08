@@ -15,9 +15,9 @@ const Right = () => {
         <Fade direction="down">
           <Link
             className="vertical-writing-mode transition-all duration-300 hover:text-[#00b533]"
-            href={'mailto:asqarbekdev@gmail.com'}
+            href={'mailto:info@asqarbekdev.uz'}
           >
-            asqarbekdev@gmail.com
+            info@asqarbekdev.uz
           </Link>
         </Fade>
       </div>

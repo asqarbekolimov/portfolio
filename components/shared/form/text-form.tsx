@@ -17,7 +17,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Fade } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
+import { toast } from '@/components/ui/use-toast';
 
+const token = process.env.NEXT_PUBLIC_TOKEN;
+const chat_id = process.env.NEXT_PUBLIC_CHAT_ID;
 const formSchema = z.object({
   username: z.string().min(2, {
     message: 'Username must be at least 2 characters.',
@@ -35,8 +38,7 @@ const formSchema = z.object({
 
 const TextForm = () => {
   const { t } = useTranslation();
-  // 1. Define your form.
-  const form = useForm<z.infer<typeof formSchema>>({
+  const formValidation = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: '',
@@ -45,22 +47,47 @@ const TextForm = () => {
     },
   });
 
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     console.log(values);
-  }
+
+    try {
+      const data = `Ism: ${values.username}, email: ${values.email}, message :${values.message}`;
+      const sentData = await fetch(
+        `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${data}`,
+      );
+      console.log(sentData);
+      if (sentData.ok) {
+        toast({
+          title: 'Successful',
+          description: 'Your message has been sent successfully',
+          variant: 'default',
+        });
+      } else {
+        toast({
+          title: 'Error',
+          description: 'Something went wrong',
+          variant: 'destructive',
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    formValidation.reset();
+  };
   return (
     <Fade
       className="w-full rounded-md border px-5 py-5 shadow-xl md:w-1/2 dark:bg-slate-950/25"
       direction="up"
       triggerOnce={true}
     >
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <Form {...formValidation}>
+        <form
+          onSubmit={formValidation.handleSubmit(onSubmit)}
+          className="space-y-4"
+        >
           <FormField
-            control={form.control}
+            control={formValidation.control}
             name="username"
             render={({ field }) => (
               <FormItem>
@@ -74,7 +101,7 @@ const TextForm = () => {
             )}
           />
           <FormField
-            control={form.control}
+            control={formValidation.control}
             name="email"
             render={({ field }) => (
               <FormItem>
@@ -87,7 +114,7 @@ const TextForm = () => {
             )}
           />
           <FormField
-            control={form.control}
+            control={formValidation.control}
             name="message"
             render={({ field }) => (
               <FormItem>
