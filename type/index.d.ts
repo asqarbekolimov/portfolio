@@ -9,7 +9,7 @@ export interface ProjectsProps {
 
 export interface ProjectProps {
   project: ProjectsProps;
-  index: number;
+  index?: number;
 }
 
 export interface MenuItemsProps {

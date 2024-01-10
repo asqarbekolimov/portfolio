@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { Modal } from '@/components/shared/modal/modal';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -59,22 +60,22 @@ const ProjectsPageComponent = () => {
                 style={{ top: `calc(0% + ${index * 25}px)` }}
                 className="flex h-full max-h-[500px] w-full max-w-[10000px] flex-col items-start gap-5 px-5 py-5 md:flex-row"
               >
-                <CardHeader className="relative h-[50%] w-full rounded-md border md:h-[100%] md:w-[50%]">
+                <CardHeader className="relative h-[100%] w-full rounded-md border md:h-[100%] md:w-[50%]">
                   <CustomImage project={project} fill />
                 </CardHeader>
                 <CardContent className="flex h-full flex-col justify-between p-0">
                   <CardTitle>{t(project.title, { ns: 'project' })}</CardTitle>
-                  <CardDescription className="mt-3 line-clamp-3 max-w-lg text-justify md:line-clamp-none">
+                  <CardDescription className="mt-3 line-clamp-3  max-w-2xl text-justify md:line-clamp-none md:block">
                     {t(project.description, { ns: 'project' })}
                   </CardDescription>
-                  <div className="mt-3 flex flex-wrap gap-2">
+                  <div className="mt-3 hidden flex-wrap gap-2 md:flex">
                     {project.skills.split(', ').map((c, id) => (
                       <Badge key={id} className="flex items-center space-x-2">
                         <p>{c}</p>
                       </Badge>
                     ))}
                   </div>
-                  <div className="mt-5 flex gap-5">
+                  <div className="mt-5 hidden flex-wrap gap-5 md:flex">
                     <Link href={project.link} target="_blank">
                       <Button variant={'outline'} className="uppercase">
                         <span className="mr-1">
@@ -91,6 +92,9 @@ const ProjectsPageComponent = () => {
                         <span>{t('git_repo', { ns: 'project' })}</span>
                       </Button>
                     </Link>
+                  </div>
+                  <div className="md:hidden">
+                    <Modal project={project} />
                   </div>
                 </CardContent>
               </Card>
