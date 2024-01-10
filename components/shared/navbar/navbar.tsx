@@ -32,7 +32,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
         setScrolled(true);
-      } else {
+      } else if (isOpen) {
         setScrolled(false);
       }
     };
@@ -40,7 +40,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isOpen]);
 
   const { t } = useTranslation();
 
@@ -75,11 +75,12 @@ const Navbar = () => {
         </div>
       </Fade>
 
-      <Fade className="lg:hidden">
+      <>
         <div
           onClick={() => setIsOpen((state) => !state)}
           className={` ${
-            isOpen && '!block transform  transition-all duration-500'
+            isOpen &&
+            '!block transform !overflow-hidden transition-all duration-500'
           } absolute bottom-0 right-0 top-0 z-50 hidden h-screen w-full transform space-x-4 
          bg-white/25 px-3 py-5 shadow-lg backdrop-blur-md transition-all duration-500 dark:bg-slate-900/50`}
         />
@@ -121,7 +122,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-      </Fade>
+      </>
 
       <Fade className="block lg:hidden">
         <div className="flex items-center gap-3">
