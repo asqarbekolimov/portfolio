@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Navbar />
           <Left />
           <Right />
-          <main className="mt-32  flex w-full items-start justify-start px-10 md:px-10 lg:px-[150px]">
+          <main className="mt-32  flex w-full items-start justify-start px-4 md:px-10 lg:px-[150px]">
             {children}
             <Analytics />
             <SpeedInsights />
