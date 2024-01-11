@@ -44,12 +44,14 @@ export default function HomePageComponent() {
           </Link>
         </p>
         <div className="shadow-mdhover:border-transparent inline-block cursor-pointer rounded border-2 border-[#00b533] px-8  py-1">
-          <Button
-            variant={'default'}
-            className="bg-transparent text-base text-[#00b533] hover:bg-transparent"
-          >
-            {t('resume', { ns: 'index' })}
-          </Button>
+          <Link href={'/resume.pdf'} target="_blank">
+            <Button
+              variant={'default'}
+              className="bg-transparent text-base text-[#00b533] hover:bg-transparent"
+            >
+              {t('resume', { ns: 'index' })}
+            </Button>
+          </Link>
         </div>
       </Fade>
     </section>
