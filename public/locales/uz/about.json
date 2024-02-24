@@ -1,0 +1,19 @@
+{
+  "about_me":"MEN HAQIMDA",
+  "about_description":"Salom. mening ismim Asqarbek. Men O'zbekistonda yashayman. Hozir men bir yildan ortiq tajribaga ega bo'lgan frontend (Reactjs) dasturchisiman va qo'shimcha backend (Node.js, Nestjs)ni o'rganyapman. Bundan tashqari, men React Native-da iOS va Android uchun mobil dasturlashni o'rganyapman.",
+  "prg_lng":"Dasturlash tillari:",
+  "skills":"Ko'nikmalar:",
+  "see_course":"kursni ko'rish",
+  "see_cert":"sertifikatni  ko'rish",
+  "it_descr":"Dasturlashga birinchi bo'lib IT Park va Udacity hamkorlikda “One Million Uzbek Coders” online darslardan boshlandi. Keyin IT Parkda 6 oy davomida Frontend web dasturlashni o'rgandim. Kurs davimida websaytlar va landing pagelarning dizayn va moslashuvchan UI ni yartishni, jamoa bilan ishlashni o'rgandim",
+  "june_2020":"Iyun 2020",
+  "feb_2021":"Fevral 2021",
+  "mohir_descr":"Dasturlash va veb-dasturlash sohasidagi bilimlarimni yanada rivojlantirish maqsadida MohirDev tomonidan yaratilgan MERN Stack bo'yicha 7 oylik onlayn kursda qatnashdim. Kurs davomida men veb-ilovalarning murakkab UI yaratishni, frontend loyihasini turli API-lar bilan backend bilan integratsiyalashni va to'liq stack veb-ilovalar va veb-saytlarni yaratishni o'rgandim. Onlayn kursni sotib olishimdan maqsad onlayn jamoalarning muloqoti va loyihalarida paydo bo'ladigan xatolarga yechim topish edi.",
+  "march_2021":"Mart 2021",
+  "sept_2021":"Sentyabr 2021",
+  "sammi_descr":"Startap loyihalari bilan ishlash, toʻlov tizimlarini loyihalarga integratsiyalash va React.js Framework Next.js-ni Typescript bilan oʻrganish uchun Sammi bootcampiga qoʻshildim. Kursda men Stripe bilan obuna loyihalarini yaratdim, murakkab grid tizimi bilan ishladim, turli UI kutubxonalarini, sayt tuzilmalarini o'rgandim va onlayn o'quv markazi uchun platforma yaratdim ...",
+  "june_2023":"Iyun 2023",
+  "present":"Davom etmoqda",
+  "coursera_descr":"Men JavaScript kodini yozishga va mobil ilovalar yozishga juda qiziqardim va Meta’ning Coursera’dagi React Native kursini tezda tamomladim. Kurs davomida “Kichik limon” loyihasini ingliz tili bo‘yicha yakunladim",
+  "jan_2024":"Yanvar 2024"
+}

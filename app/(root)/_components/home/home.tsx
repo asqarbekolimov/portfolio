@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 export default function HomePageComponent() {
   const { t } = useTranslation();
   return (
-    <section className="m-auto w-full max-w-[1000px]">
+    <section className="m-auto mt-24 w-full max-w-[1000px]">
       <h1 className={"font-inter text-[#00b533]"}>
         {t("my_name_is", { ns: "index" })}
       </h1>

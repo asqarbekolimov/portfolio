@@ -1,0 +1,21 @@
+{
+  "Home":"Bosh Sahifa",
+  "About":"Men Haqimda",
+  "Projects":"Loyihalar",
+  "Contact":"Bog'lanish",
+  "choose_lng":"Tilni tanlang",
+  "my_name_is":"Salom, mening ismim",
+  "asqarbek_olimov":"Asqarbek Olimov",
+  "i_build_things":"Men veb va mobil ilovalar yarataman",
+  "short_about": "Salom! Men Asqarbekman, hozirda frontend dasturchisiman. Men ReactJS kutubxonasi bilan ishlashda 1 yildan ortiq tajribaga egaman va men ReactJS yordamida veb va mobil ilovalarni ishlab chiqishga ixtisoslashganman.",
+  "more":"ko'proq",
+  "resume":"Rezyume",
+  "contact_me":"Men bilan bog'laningish",
+  "fill_up":"Formani to'ldiring va bizning jamoamiz sizga 24 soat ichida javob beradi.",
+  "your_name":"Ismingiz",
+  "name":"Ism",
+  "email": "Elektron pochta",
+  "message":"Xabar",
+  "enter_msg": "Xabaringizni kiriting...",
+  "submit":"Yuborish"
+}

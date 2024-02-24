@@ -56,6 +56,7 @@ const config = {
       fontFamily: {
         inter: ["var(--font-inter)"],
         firacode: ["var(--font-firaCode)"],
+        workSans: ["var(--font-workSans)"],
       },
       borderRadius: {
         lg: "var(--radius)",
