@@ -1,0 +1,21 @@
+{
+  "Home":"Home",
+  "About":"About",
+  "Projects":"Projects",
+  "Contact":"Contact",
+  "choose_lng":"Choose language",
+  "my_name_is":"Hi, my name is",
+  "asqarbek_olimov":"Askarbek Olimov",
+  "i_build_things":"I build web and mobile applications",
+  "short_about": "Hello! I'm Asqarbek, currently a frontend developer. I have more than 1 year of experience working with the ReactJS library, and I specialize in developing web and mobile applications using ReactJS.",
+  "more":"more",
+  "resume":"Resume",
+  "contact_me":"Contact with me",
+  "fill_up":"Fill up the form and our Team will get back to you within 24 hours.",
+  "your_name":"Your Name",
+  "name":"Name",
+  "email": "Email",
+  "message":"Message",
+  "enter_msg": "Enter your message...",
+  "submit":"Submit"
+}
