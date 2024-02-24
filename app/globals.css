@@ -65,3 +65,8 @@
     @apply font-workSans bg-background text-base text-foreground;
   }
 }
+
+.vertical-writing-mode {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
