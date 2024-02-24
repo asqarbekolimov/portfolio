@@ -71,13 +71,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-400 selection:bg-[#00b533] selection:text-white dark:!scrollbar-thumb-gray-500;
+    @apply bg-background text-foreground;
   }
 }
-.vertical-writing-mode {
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-}
-/* ::-webkit-scrollbar {
-  width: 15px;
-} */
