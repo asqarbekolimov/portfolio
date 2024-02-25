@@ -62,7 +62,7 @@
     @apply border-border;
   }
   body {
-    @apply font-workSans bg-background text-base text-foreground;
+    @apply bg-background font-workSans text-base text-foreground;
   }
 }
 
