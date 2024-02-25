@@ -3,6 +3,7 @@ import { Inter, Fira_Code, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Provider } from "@/provider/provider";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   weight: ["500", "600", "700"],
@@ -42,6 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster position="top-center" />
         </Provider>
       </body>
     </html>

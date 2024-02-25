@@ -1,7 +1,7 @@
 import { getProjects } from "@/services/project.service";
 import { cookies } from "next/headers";
 import React from "react";
-import ProjectPageComponents from "./project";
+import ProjectPageComponents from "../_components/project/project";
 
 async function Page() {
   const cookieStore = cookies();
@@ -9,7 +9,7 @@ async function Page() {
   const projects = await getProjects(language?.value as string);
 
   return (
-    <section className="m-auto mt-24 w-full max-w-6xl">
+    <section className="m-auto mt-24 w-full max-w-6xl pt-16 md:pt-32">
       <h1
         className={` text-shadow-md font-mono text-5xl font-semibold uppercase text-slate-300 sm:text-6xl md:text-7xl lg:text-8xl`}
       >
