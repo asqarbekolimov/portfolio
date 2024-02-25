@@ -15,7 +15,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const { t } = useTranslation();
   return (
-    <div className="!z-50 flex items-center justify-between border-b bg-transparent px-5 py-2 md:px-6 md:py-5 lg:px-14 lg:py-5">
+    <div className="fixed left-0 right-0 top-0 !z-50 flex items-center justify-between border-b px-5 py-2 text-slate-400 backdrop-blur-lg dark:bg-slate-950/50 md:px-6 md:py-5 lg:px-14 lg:py-5">
       <Link href={"/"}>
         <Code2 size={40} />
       </Link>
