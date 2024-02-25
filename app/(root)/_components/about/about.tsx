@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-
 import { Button } from "@/components/ui/button";
-
 import { Fade, Zoom } from "react-awesome-reveal";
 import {
   CourseraSkills,
@@ -12,6 +10,8 @@ import {
   SammiSkills,
   Skills,
 } from "@/constants";
+import { SiJavascript, SiTypescript } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
 
 import { useTranslation } from "react-i18next";
 import { TracingBeam } from "@/components/ui/tracing-beam";
@@ -48,9 +48,9 @@ const AboutPageComponents = () => {
                     {t("prg_lng", { ns: "about" })}
                   </h3>
                   <div className="flex flex-wrap items-end gap-4">
-                    {/* <SiJavascript size={50} className="text-yellow-500" />
-                  <SiTypescript size={50} className="text-blue-500" />
-                  <TbBrandCpp size={50} className="text-red-500" /> */}
+                    <SiJavascript size={50} className="text-yellow-500" />
+                    <SiTypescript size={50} className="text-blue-500" />
+                    <TbBrandCpp size={50} className="text-red-500" />
                   </div>
                   <h3 className="mb-5 mt-10 text-xl font-semibold text-slate-300">
                     {t("skills", { ns: "about" })}

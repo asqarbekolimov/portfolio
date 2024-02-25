@@ -7,7 +7,7 @@ const Layout = ({ children }: ChildProps) => {
   return (
     <main>
       <Navbar />
-      <div className="container">
+      <div className="container  md:px-0">
         <Left />
         <Right />
         {children}
