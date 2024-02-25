@@ -25,7 +25,7 @@ const AboutPageComponents = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="m-auto mt-24 w-full">
+    <section className="m-auto mt-24 w-full max-w-6xl pt-16 md:pt-32">
       <TracingBeam>
         <div className="flex h-auto w-full flex-col items-start gap-10">
           <Fade direction="down" triggerOnce={true}>

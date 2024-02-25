@@ -27,6 +27,7 @@ export interface IProject {
   title: string;
   description: string;
   demo: string;
+  createdAt: string;
   content: {
     html: string;
   };

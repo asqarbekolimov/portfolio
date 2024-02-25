@@ -12,10 +12,12 @@ import {
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Languages } from "lucide-react";
+import { useParams, useRouter } from "next/navigation";
 
 const TranslateBtn = () => {
   const { i18n } = useTranslation();
-
+  const router = useRouter();
+  const params = useParams<{ slug: string; item: string }>();
   const [position, setPosition] = useState<string | undefined>(
     i18n.resolvedLanguage,
   );
@@ -36,11 +38,21 @@ const TranslateBtn = () => {
               i18n.changeLanguage(lng);
             };
 
+            const onChangeLng = (lang: string) => {
+              onLanguage(lang);
+              if (params.slug) {
+                router.back();
+              } else {
+                router.refresh();
+              }
+              router.refresh();
+            };
+
             return (
               <DropdownMenuRadioItem
                 key={lang.lng}
                 value={lang.lng}
-                onClick={() => onLanguage(lang.lng)}
+                onClick={() => onChangeLng(lang.lng)}
               >
                 {lang.name}
               </DropdownMenuRadioItem>

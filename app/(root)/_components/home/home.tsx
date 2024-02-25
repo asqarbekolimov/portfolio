@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 export default function HomePageComponent() {
   const { t } = useTranslation();
   return (
-    <section className="m-auto mt-24 w-full max-w-6xl">
+    <section className="m-auto mt-24 w-full max-w-6xl pt-16 md:pt-32">
       <Fade direction="down" triggerOnce={true}>
         <h1 className={"font-firacode text-blue-500"}>
           {t("my_name_is", { ns: "index" })}
