@@ -1,25 +1,25 @@
-import { IProject, ITags } from "@/type";
+import { ICategory, IProject, ITags } from "@/type";
 import request, { gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_API!;
 
-export const getTags = async () => {
+export const getCategories = async () => {
   const query = gql`
     query MyQuery {
-      tags {
+      categories {
         name
         slug
       }
     }
   `;
-  const result = await request<{ tags: ITags[] }>(graphqlAPI, query);
-  return result.tags;
+  const result = await request<{ categories: ICategory[] }>(graphqlAPI, query);
+  return result.categories;
 };
 
-export const getTagsDetailed = async (slug: string) => {
+export const getCategoriesDetailed = async (slug: string) => {
   const query = gql`
     query MyQuery($slug: String!) {
-      tag(where: { slug: $slug }) {
+      category(where: { slug: $slug }) {
         name
         description
         slug
@@ -47,8 +47,8 @@ export const getTagsDetailed = async (slug: string) => {
       }
     }
   `;
-  const result = await request<{
-    tag: {
+  const { category } = await request<{
+    category: {
       projects: IProject[];
       description: string;
       slug: string;
@@ -57,5 +57,5 @@ export const getTagsDetailed = async (slug: string) => {
   }>(graphqlAPI, query, {
     slug,
   });
-  return result;
+  return { category };
 };

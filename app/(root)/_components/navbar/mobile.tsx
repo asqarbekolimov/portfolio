@@ -9,6 +9,7 @@ import { MenuItemsProps } from "@/type";
 import { Code2, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TranslateBtn from "@/components/shared/drop-down";
 
 const Mobile = () => {
   const pathname = usePathname();
@@ -39,6 +40,7 @@ const Mobile = () => {
               </SheetTrigger>
             </Link>
           ))}
+          <TranslateBtn />
         </div>
       </SheetContent>
     </Sheet>

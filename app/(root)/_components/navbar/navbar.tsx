@@ -40,7 +40,7 @@ const Navbar = () => {
       </div>
       <div className="flex gap-2 lg:hidden">
         <ModeToggle />
-        <TranslateBtn />
+
         <Mobile />
       </div>
     </div>

@@ -25,7 +25,7 @@ const TranslateBtn = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" className="bg-transparent">
+        <Button variant="secondary" className="md:bg-transparent">
           <Languages size={20} className="text-slate-400" />
         </Button>
       </DropdownMenuTrigger>

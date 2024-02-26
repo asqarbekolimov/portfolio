@@ -71,8 +71,8 @@ async function Page({ params }: { params: { slug: string } }) {
         <div className="flex flex-1 flex-col space-y-4">
           <h2 className="font-creteRound text-3xl">Asqarbek Olimov</h2>
           <p className="line-clamp-2 text-muted-foreground">
-            ! I&apos;m Asqarbek, currently a frontend developer. I have more
-            than 1 year of experience working with the ReactJS library, and I
+            I&apos;m Asqarbek, currently a frontend developer. I have more than
+            1 year of experience working with the ReactJS library, and I
             specialize in developing web and mobile applications using ReactJS.
           </p>
           <Link
