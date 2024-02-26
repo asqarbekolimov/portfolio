@@ -4,6 +4,11 @@ import React from "react";
 import ProjectPageComponents, {
   ProjectPageTitle,
 } from "../_components/project/project";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All projects",
+};
 
 async function Page() {
   const cookieStore = cookies();

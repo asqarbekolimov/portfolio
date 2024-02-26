@@ -4,6 +4,11 @@ import TagsPageComponent from "../_components/tags/tags";
 import CategoriesPageComponent, {
   CategoriesTitle,
 } from "../_components/categories/categories";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All catogories",
+};
 
 async function Page() {
   const category = await getCategories();

@@ -1,6 +1,11 @@
 import React from "react";
 import ContactPageComponent from "../_components/contact/contact";
 import ContactForm from "../_components/contact/form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact us",
+};
 
 function Page() {
   return (

@@ -21,7 +21,6 @@ export const getTagsDetailed = async (slug: string) => {
     query MyQuery($slug: String!) {
       tag(where: { slug: $slug }) {
         name
-        description
         slug
         projects {
           id

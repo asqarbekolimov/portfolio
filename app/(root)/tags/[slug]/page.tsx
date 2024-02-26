@@ -1,12 +1,14 @@
 import { getTagsDetailed } from "@/services/tags.service";
 import React from "react";
 import ProjectPageComponents from "../../_components/project/project";
-import { cookies } from "next/headers";
 import { TagsTitle } from "../../_components/tags/tags";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tag",
+};
 
 async function Page({ params }: { params: { slug: string } }) {
-  const cookieStore = cookies();
-  const language = cookieStore.get("i18next");
   const projects = await getTagsDetailed(params.slug);
 
   return (

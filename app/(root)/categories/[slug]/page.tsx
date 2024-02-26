@@ -2,6 +2,11 @@ import { getCategoriesDetailed } from "@/services/category.service";
 import React from "react";
 import ProjectPageComponents from "../../_components/project/project";
 import { CategoriesTitle } from "../../_components/categories/categories";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Catogory",
+};
 
 async function Page({ params }: { params: { slug: string } }) {
   const category = await getCategoriesDetailed(params.slug);

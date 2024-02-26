@@ -1,6 +1,11 @@
 import { getTags } from "@/services/tags.service";
 import React from "react";
 import TagsPageComponent, { TagsTitle } from "../_components/tags/tags";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All tags",
+};
 
 async function Page() {
   const tags = await getTags();

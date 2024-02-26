@@ -5,8 +5,33 @@ import React from "react";
 import parse from "html-react-parser";
 import Link from "next/link";
 import { format } from "date-fns";
-import { ArrowUpRight, CalendarDays, Clock, Minus } from "lucide-react";
+import {
+  ArrowUpRight,
+  CalendarDays,
+  Clock,
+  Hash,
+  Minus,
+  Tag,
+} from "lucide-react";
 import { getReadingTime } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const project = await getProjectDetail(params.slug);
+  return {
+    title: project.title,
+    description: project.description,
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      images: project.image.url,
+    },
+  };
+}
 
 async function Page({ params }: { params: { slug: string } }) {
   const project = await getProjectDetail(params.slug);
@@ -57,6 +82,32 @@ async function Page({ params }: { params: { slug: string } }) {
         </div>
         <div className="prose dark:prose-invert flex-1 text-slate-300">
           {parse(project.content.html)}
+
+          <div className="clear-start my-10 flex flex-col gap-2">
+            <div className="flex gap-1">
+              {project.tags.map((item) => (
+                <Link href={`/tags/${item.slug}`} key={item.slug}>
+                  <Badge variant={"outline"} className="">
+                    <span className="mr-1">
+                      <Hash className="h-3 w-3" />
+                    </span>
+                    <span>{item.name}</span>
+                  </Badge>
+                </Link>
+              ))}
+            </div>
+            <Link
+              href={`/categories/${project.category.slug}`}
+              key={project.category.slug}
+            >
+              <Badge variant={"secondary"} className="">
+                <span className="mr-1">
+                  <Tag className="h-3 w-3" />
+                </span>
+                <span>{project.category.name}</span>
+              </Badge>
+            </Link>
+          </div>
         </div>
       </div>
 
