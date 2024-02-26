@@ -40,12 +40,6 @@ const TranslateBtn = () => {
 
             const onChangeLng = (lang: string) => {
               onLanguage(lang);
-              if (params.slug) {
-                router.back();
-              } else {
-                router.refresh();
-              }
-              router.refresh();
             };
 
             return (

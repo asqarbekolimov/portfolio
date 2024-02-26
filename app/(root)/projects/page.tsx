@@ -8,7 +8,7 @@ import ProjectPageComponents, {
 async function Page() {
   const cookieStore = cookies();
   const language = cookieStore.get("i18next");
-  const projects = await getProjects(language?.value as string);
+  const projects = await getProjects();
 
   return (
     <section className="m-auto mt-24 w-full max-w-6xl pt-16 md:pt-32">

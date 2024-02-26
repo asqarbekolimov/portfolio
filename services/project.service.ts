@@ -4,17 +4,16 @@ import { cache } from "react";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_API!;
 
-export const getProjects = async (language: string) => {
+export const getProjects = async () => {
   const query = gql`
-    query MyQuery($language: Language) {
-      projects(where: { language: $language }) {
+    query MyQuery {
+      projects {
         id
         title
         description
         content {
           html
         }
-        language
         slug
         demo
         tags {
@@ -34,9 +33,6 @@ export const getProjects = async (language: string) => {
   const { projects } = await request<{ projects: IProject[] }>(
     graphqlAPI,
     query,
-    {
-      language,
-    },
   );
 
   return projects;
