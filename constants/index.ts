@@ -1,184 +1,184 @@
 export const menuItems = [
   {
-    id: 'home',
-    title: 'Home',
-    path: '/',
+    id: "home",
+    title: "Home",
+    path: "/",
   },
   {
-    id: 'about',
-    title: 'About',
-    path: '/about',
+    id: "about",
+    title: "About",
+    path: "/about",
   },
   {
-    id: 'projects',
-    title: 'Projects',
-    path: '/projects',
+    id: "projects",
+    title: "Projects",
+    path: "/projects",
   },
   {
-    id: 'contact',
-    title: 'Contact',
-    path: '/contact',
+    id: "contact",
+    title: "Contact",
+    path: "/contact",
   },
 ];
 export const Skills = [
   {
-    name: 'JavaScript',
+    name: "JavaScript",
   },
   {
-    name: 'TypeScript',
+    name: "TypeScript",
   },
   {
-    name: 'React.js & Next.js',
+    name: "React.js & Next.js",
   },
   {
-    name: 'React Native',
+    name: "React Native",
   },
   {
-    name: 'MERN Stack',
+    name: "MERN Stack",
   },
   {
-    name: 'SEO',
+    name: "SEO",
   },
   {
-    name: 'HTML & CSS',
+    name: "HTML & CSS",
   },
   {
-    name: 'CSS Preprocessors',
+    name: "CSS Preprocessors",
   },
   {
-    name: 'UI Frameworks',
+    name: "UI Frameworks",
   },
   {
-    name: 'Responsive Design',
+    name: "Responsive Design",
   },
   {
-    name: 'Stripe',
+    name: "Stripe",
   },
   {
-    name: 'Deployment',
+    name: "Deployment",
   },
   {
-    name: 'ChatGPT',
+    name: "ChatGPT",
   },
   {
-    name: 'Communication',
+    name: "Communication",
   },
 ];
 export const ITParkSkills = [
   {
-    name: 'JavaScript',
+    name: "JavaScript",
   },
   {
-    name: 'HTML & CSS',
+    name: "HTML & CSS",
   },
   {
-    name: 'SASS&SCSS',
+    name: "SASS&SCSS",
   },
   {
-    name: 'Bootstrap',
+    name: "Bootstrap",
   },
   {
-    name: 'Responsive Design',
+    name: "Responsive Design",
   },
   {
-    name: 'Figma',
+    name: "Figma",
   },
   {
-    name: 'Communication',
+    name: "Communication",
   },
 ];
 export const MohirdevSkills = [
   {
-    name: 'Reactjs',
+    name: "Reactjs",
   },
   {
-    name: 'JavaScript',
+    name: "JavaScript",
   },
   {
-    name: 'MongoDB',
+    name: "MongoDB",
   },
   {
-    name: 'Experss.js',
+    name: "Experss.js",
   },
   {
-    name: 'Node.js',
+    name: "Node.js",
   },
   {
-    name: 'API',
+    name: "API",
   },
   {
-    name: 'Material UI',
+    name: "Material UI",
   },
   {
-    name: 'Problem Solving',
+    name: "Problem Solving",
   },
 ];
 export const SammiSkills = [
   {
-    name: 'TypeScript',
+    name: "TypeScript",
   },
   {
-    name: 'Next.js',
+    name: "Next.js",
   },
   {
-    name: 'TailwindCSS',
+    name: "TailwindCSS",
   },
   {
-    name: 'Chakra UI',
+    name: "Chakra UI",
   },
   {
-    name: 'Stripe',
+    name: "Stripe",
   },
   {
-    name: 'Firebase',
+    name: "Firebase",
   },
   {
-    name: 'NextAuth',
+    name: "NextAuth",
   },
   {
-    name: 'Form Validation',
+    name: "Form Validation",
   },
   {
-    name: 'Git & Github',
+    name: "Git & Github",
   },
   {
-    name: 'Postman',
+    name: "Postman",
   },
   {
-    name: 'Vercel',
+    name: "Vercel",
   },
 ];
 export const CourseraSkills = [
-  { name: 'React Native' },
-  { name: 'Expo Navigation' },
-  { name: 'React Native Components' },
+  { name: "React Native" },
+  { name: "Expo Navigation" },
+  { name: "React Native Components" },
 ];
 export const projects = [
   {
-    title: 'pr1_title',
-    description: 'pr1_descr',
-    link: 'https://subscription.asqarbekdev.uz',
-    img: '/projects/1.png',
+    title: "pr1_title",
+    description: "pr1_descr",
+    link: "https://subscription.asqarbekdev.uz",
+    img: "/projects/1.png",
     skills:
-      'NextJS, TypeScript, NodeJS, ExpressJS, React, Context, Zustand, Stripe, Firebase, Payment, Tailwind CSS',
-    repo: 'https://github.com/asqarbekolimov/subscription-web-app',
+      "NextJS, TypeScript, NodeJS, ExpressJS, React, Context, Zustand, Stripe, Firebase, Payment, Tailwind CSS",
+    repo: "https://github.com/asqarbekolimov/subscription-web-app",
   },
   {
-    title: 'pr2_title',
-    description: 'pr2_descr',
-    link: 'https://edu.asqarbekdev.uz/',
-    img: '/projects/2.png',
+    title: "pr2_title",
+    description: "pr2_descr",
+    link: "https://edu.asqarbekdev.uz/",
+    img: "/projects/2.png",
     skills:
-      'TypeScript, NextJs, Framer motion, NProgress, Module CSS, High Order Component, UI Components',
-    repo: 'https://github.com/asqarbekolimov/education',
+      "TypeScript, NextJs, Framer motion, NProgress, Module CSS, High Order Component, UI Components",
+    repo: "https://github.com/asqarbekolimov/education",
   },
   {
-    title: 'pr3_title',
-    description: 'pr3_descr',
-    link: 'https://www.asqarbekdev.uz/',
-    img: '/projects/4.png',
+    title: "pr3_title",
+    description: "pr3_descr",
+    link: "https://www.asqarbekdev.uz/",
+    img: "/projects/4.png",
     skills:
-      'TypeScript, NextJs, React Reval, I18Next, Shadcn UI, Tailwind CSS, Husky, Lint, Prettier',
-    repo: 'https://github.com/asqarbekolimov/portfolio/',
+      "TypeScript, NextJs, React Reval, I18Next, Shadcn UI, Tailwind CSS, Husky, Lint, Prettier",
+    repo: "https://github.com/asqarbekolimov/portfolio/",
   },
 ];
