@@ -18,9 +18,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Send } from "lucide-react";
 import { toast } from "sonner";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const { t } = useTranslation();
 
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
@@ -73,7 +75,7 @@ const ContactForm = () => {
                   <FormControl>
                     <Textarea
                       className="h-32 resize-none"
-                      placeholder="Ask question or just say Hi"
+                      placeholder={t("enter_msg", { ns: "index" })}
                       {...field}
                       disabled={isLoading}
                     />
@@ -90,7 +92,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="Email address"
+                      placeholder={t("email", { ns: "index" })}
                       {...field}
                       disabled={isLoading}
                     />
@@ -107,7 +109,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="Your name here"
+                      placeholder={t("your_name", { ns: "index" })}
                       {...field}
                       disabled={isLoading}
                     />
@@ -123,7 +125,7 @@ const ContactForm = () => {
               type="submit"
               disabled={isLoading}
             >
-              <span>Send</span>
+              <span>{t("submit", { ns: "index" })}</span>
               <Send className="ml-2 h-4 w-4" />
             </Button>
           </form>

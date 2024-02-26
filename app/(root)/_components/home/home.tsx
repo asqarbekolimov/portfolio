@@ -30,10 +30,9 @@ export default function HomePageComponent() {
       </Fade>
 
       <Fade direction="up" triggerOnce={true}>
-        <TextGenerateEffect
-          words={t("short_about", { ns: "index" })}
-          className="my-8 max-w-2xl font-workSans text-lg font-medium leading-6 tracking-wider text-slate-400"
-        />
+        <p className="my-8 max-w-2xl font-workSans text-lg font-medium leading-6 tracking-wider text-slate-400">
+          {t("short_about", { ns: "index" })}
+        </p>
 
         <div className="shadow-mdhover:border-transparent inline-block cursor-pointer rounded border-2 border-blue-600 px-8  py-1">
           <Link href={"/resume.pdf"} target="_blank">

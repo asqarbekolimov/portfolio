@@ -1,7 +1,9 @@
 import { getProjects } from "@/services/project.service";
 import { cookies } from "next/headers";
 import React from "react";
-import ProjectPageComponents from "../_components/project/project";
+import ProjectPageComponents, {
+  ProjectPageTitle,
+} from "../_components/project/project";
 
 async function Page() {
   const cookieStore = cookies();
@@ -10,11 +12,7 @@ async function Page() {
 
   return (
     <section className="m-auto mt-24 w-full max-w-6xl pt-16 md:pt-32">
-      <h1
-        className={` text-shadow-md font-mono text-5xl font-semibold uppercase text-slate-300 sm:text-6xl md:text-7xl lg:text-8xl`}
-      >
-        Projects
-      </h1>
+      <ProjectPageTitle />
 
       <div className="grid w-full grid-cols-1 md:grid-cols-2">
         {projects.map((project) => (

@@ -6,6 +6,10 @@
   "pr2_title":"Kichik Ta'lim Platformasi",
   "pr2_descr":"Ushbu loyihada NextJS ilovasini batafsil tahlil qilamiz, Atrof-muhitni sozlash va loyihani qurish, Server tomonida ko'rsatish (SSR) va statik sahifa yaratish qanday ishlaydi, Next.js o'rnatilgan komponentlari, react-hook-form orqali shakllar bilan ishlash, Animatsiya Framer Motion-dan foydalanish, Hikoyalar kitobi komponentlarini yaratish, To'liq SEOga mos server ilovasi, Ishlab chiqarish uchun dastur tayyorlang, Styling uchun biz CSS modullaridan foydalandik, Ishlab chiqarish loyihasini yaratdik va eslint, uslublar qatorini va disk raskadrovkani sozlaymiz.",
   "pr3_title":"Portfolio veb-sayti",
-  "pr3_descr":"Shaxsiy portfel veb-sayti. Veb-sayt kichik qurilmalar uchun moslashtirilgan, Nextjs-da animatsiya va optimallashtirilgan tasvirlarga ega, SEO ham sozlangan, tungi rejim mavjud, u 3 ta tilda va til brauzerning cookie-fayllarida saqlanadi."
-
+  "pr3_descr":"Shaxsiy portfel veb-sayti. Veb-sayt kichik qurilmalar uchun moslashtirilgan, Nextjs-da animatsiya va optimallashtirilgan tasvirlarga ega, SEO ham sozlangan, tungi rejim mavjud, u 3 ta tilda va til brauzerning cookie-fayllarida saqlanadi.",
+  "tags":"Teglar:",
+  "category":"Kategoriya:",
+  "see_preview":"Ko'rish",
+  "projects":"Loyihalar",
+  "more_info":"Batafsil ma'lumot"
 }

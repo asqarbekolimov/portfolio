@@ -1,3 +1,4 @@
+"use client";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { Badge } from "@/components/ui/badge";
 import { IProject } from "@/type";
@@ -5,8 +6,10 @@ import { Hash, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ProjectPageComponents = (project: IProject) => {
+  const { t } = useTranslation();
   return (
     <>
       {" "}
@@ -35,7 +38,7 @@ const ProjectPageComponents = (project: IProject) => {
             />
           </CardItem>
           <CardItem translateZ="100" className="mt-4 w-full">
-            <h3 className="mb-2">Tags:</h3>
+            <h3 className="mb-2">{t("tags", { ns: "project" })}</h3>
             {project.tags.map((item) => (
               <Link href={`/tags/${item.slug}`} key={item.slug}>
                 <Badge variant={"outline"} className="">
@@ -48,7 +51,7 @@ const ProjectPageComponents = (project: IProject) => {
             ))}
           </CardItem>
           <CardItem translateZ="100" className="mt-4 w-full">
-            <h3 className="mb-2">Category:</h3>
+            <h3 className="mb-2">{t("category", { ns: "project" })}</h3>
             <Link
               href={`/categories/${project.category.slug}`}
               key={project.category.slug}
@@ -66,10 +69,10 @@ const ProjectPageComponents = (project: IProject) => {
               translateZ={20}
               translateX={-40}
               as="button"
-              className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
+              className="rounded-xl border px-4 py-2 text-xs font-normal dark:text-white"
             >
               <Link href={project.demo} target="_blank">
-                Live
+                {t("see_preview", { ns: "project" })}
               </Link>
             </CardItem>
             <CardItem
@@ -78,7 +81,9 @@ const ProjectPageComponents = (project: IProject) => {
               as="button"
               className="rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
             >
-              <Link href={`/projects/${project.slug}`}>More Info</Link>
+              <Link href={`/projects/${project.slug}`}>
+                {t("more_info", { ns: "project" })}
+              </Link>
             </CardItem>
           </div>
         </CardBody>
@@ -88,3 +93,14 @@ const ProjectPageComponents = (project: IProject) => {
 };
 
 export default ProjectPageComponents;
+
+export const ProjectPageTitle = () => {
+  const { t } = useTranslation();
+  return (
+    <h1
+      className={` text-shadow-md font-mono text-5xl font-semibold uppercase text-slate-300 sm:text-6xl md:text-7xl lg:text-8xl`}
+    >
+      {t("projects", { ns: "project" })}
+    </h1>
+  );
+};
