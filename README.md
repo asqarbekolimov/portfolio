@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website - Next.js with Tailwind CSS
+
+Welcome to the GitHub repository for my portfolio website built using Next.js, Tailwind CSS, and other awesome technologies!
+
+![Portfolio Website](https://www.asqarbekdev.uz/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FWWwhOIlSV27VpyAfOaAZ&w=1200&q=75)
+
+### [Live Site](https://www.asqarbekdev.uz)
+
+## Introduction
+
+This portfolio website is a showcase of my skills and projects. It's crafted with attention to detail, incorporating the latest web development trends to create a visually appealing and user-friendly experience.
+
+## Features
+
+- **Next.js Framework:** Utilizing the power of Next.js for a seamless and performant web experience.
+- **Tailwind CSS Styling:** The UI is designed with Tailwind CSS, ensuring a clean and responsive layout.
+- **Multilingual Support:** Integrated I18next for easy translation and localization of content.
+- **Hygraph Integration:** The projects page is dynamically generated and seamlessly integrated with Hygraph for a professional look.
+- **SEO Optimization:** The entire website is optimized for search engines to ensure maximum visibility.
+- **Animations:** Engage your visitors with subtle and elegant animations throughout the site.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/asqarbekolimov/protfolio.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [localhost:3000](http://localhost:3000) in your browser to see your portfolio in action!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to customize the content, styles, and configurations to make this portfolio truly yours. Don't forget to explore and add your own projects!
 
-## Learn More
+## Feedback and Contributions
 
-To learn more about Next.js, take a look at the following resources:
+I welcome feedback and contributions. If you find a bug or have suggestions for improvement, please open an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Let's create an impressive online presence with this portfolio website!
