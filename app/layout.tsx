@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import { Provider } from "@/provider/provider";
 import { Toaster } from "sonner";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   weight: ["500", "600", "700"],
@@ -66,6 +68,8 @@ export default function RootLayout({
         >
           <NextTopLoader showSpinner={false} />
           {children}
+          <Analytics />
+          <SpeedInsights />
           <Toaster position="top-center" />
         </Provider>
       </body>
