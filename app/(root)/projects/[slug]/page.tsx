@@ -80,7 +80,7 @@ async function Page({ params }: { params: { slug: string } }) {
             <ShareBtns />
           </div>
         </div>
-        <div className="prose dark:prose-invert flex-1 text-slate-300">
+        <div className="prose flex-1 text-slate-300 dark:prose-invert">
           {parse(project.content.html)}
 
           <div className="clear-start my-10 flex flex-col gap-2">
