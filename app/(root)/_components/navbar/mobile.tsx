@@ -15,7 +15,7 @@ const Mobile = () => {
   const pathname = usePathname();
   return (
     <Sheet>
-      <SheetTrigger asChild className="flex md:hidden">
+      <SheetTrigger asChild className="flex lg:hidden">
         <Button size={"icon"} variant={"ghost"}>
           <Menu />
         </Button>
