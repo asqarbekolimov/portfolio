@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="hidden h-[90vh] w-60 border-r border-[#232627] xl:block">
+    <div className="hidden h-screen w-60 border-r border-[#232627] xl:block">
       <div className="flex h-full flex-col justify-end">
         {NavItems.map((item, index) => (
           <Link href={item.href} key={index}>
