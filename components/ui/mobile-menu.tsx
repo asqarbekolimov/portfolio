@@ -17,6 +17,7 @@ const MobileMenu = ({ isMobileNav, handleMobileNav }: MobileMenuProps) => {
   return (
     <motion.div
       className="fixed left-0 top-0 z-40 w-full bg-[#141416]/90 backdrop-blur-lg"
+      initial={{ y: "-100%" }}
       animate={{
         y: isMobileNav ? 70 : "-100%",
         transition: { duration: 0.5 },
