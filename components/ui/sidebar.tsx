@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="hidden h-screen w-60 border-r border-[#232627] xl:block">
+    <div className="sticky top-0 hidden h-screen w-60 border-r border-[#232627] xl:block">
       <div className="flex h-full flex-col justify-end">
         {NavItems.map((item, index) => (
           <Link href={item.href} key={index}>
@@ -25,7 +25,7 @@ const Sidebar = () => {
               className={cn(
                 "relative w-full border-b border-[#232627] px-10 py-7 hover:bg-[#232627]",
                 item.href === pathname
-                  ? "bg-[#232627] before:absolute before:right-0 before:top-0 before:size-3 before:border-r before:border-t after:absolute after:bottom-0 after:right-0 after:size-3 after:border-b after:border-r"
+                  ? "bg-[#232627] before:absolute before:right-0 before:top-0 before:size-2 before:border-r-2 before:border-t-2 after:absolute after:bottom-0 after:right-0 after:size-2 after:border-b-2 after:border-r-2"
                   : "",
               )}
             >

@@ -26,6 +26,10 @@ export default {
         sourceCodePro: ["var(--font-source-code-pro)"],
         arial: ["var(--font-arial)"],
       },
+      backgroundImage: {
+        "card-gradient":
+          "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(171, 171, 171, 0) 100%)",
+      },
     },
   },
   plugins: [
