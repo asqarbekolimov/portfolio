@@ -1,14 +1,18 @@
 "use client";
-import React, { ReactNode, useState } from "react";
+import React, { DetailedHTMLProps, ReactNode, useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-interface ButtonProps {
+interface ButtonProps
+  extends DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
   children: ReactNode;
   ghost?: boolean;
 }
 
-const Button = ({ children, ghost }: ButtonProps) => {
+const Button = ({ children, ghost, className }: ButtonProps) => {
   const [hoverActive, setHoverActive] = useState(false);
 
   return (
@@ -53,6 +57,7 @@ const Button = ({ children, ghost }: ButtonProps) => {
           className={cn(
             "font-sourceCodePro text-base font-semibold uppercase group-hover:text-black",
             !ghost && "opacity-25",
+            className,
           )}
         >
           {children}
@@ -64,6 +69,7 @@ const Button = ({ children, ghost }: ButtonProps) => {
           }}
           className={cn(
             "font-sourceCodePro text-base font-semibold uppercase group-hover:text-black",
+            className,
           )}
         >
           {children}

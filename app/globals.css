@@ -14,13 +14,8 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
 @layer base {
   body {
-    @apply font-sora;
+    @apply bg-background text-foreground;
   }
 }

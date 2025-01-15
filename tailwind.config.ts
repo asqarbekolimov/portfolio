@@ -9,6 +9,7 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 export default {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,6 +30,11 @@ export default {
       backgroundImage: {
         "card-gradient":
           "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(171, 171, 171, 0) 100%)",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
@@ -59,5 +65,6 @@ export default {
         },
       );
     },
+    require("tailwindcss-animate"),
   ],
 } satisfies Config;

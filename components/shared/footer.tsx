@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
             </motion.div>
           </Link>
-          <div className="grid grid-cols-3 items-center justify-items-center xl:flex">
+          <div className="grid grid-cols-3 items-center justify-items-center border-b border-[#232627] xl:flex">
             <Link
               href={"https://github.com/asqarbekolimov"}
               target="_blank"
