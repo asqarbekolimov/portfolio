@@ -1,5 +1,5 @@
 "use client";
-import { Github, Linkedin, Send } from "lucide-react";
+import { GitHubLight, LinkedIn, Telegram } from "developer-icons";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -80,21 +80,21 @@ const Footer = () => {
               target="_blank"
               className="flex w-full items-center justify-center border-l border-r border-[#232627] px-8 py-[26.5px] hover:bg-[#232627]"
             >
-              <Github />
+              <GitHubLight size={25} />
             </Link>
             <Link
               href={"https://www.linkedin.com/in/asqarbekolimov/"}
               target="_blank"
               className="flex w-full items-center justify-center border-l border-r border-[#232627] px-8 py-[26.5px] hover:bg-[#232627]"
             >
-              <Linkedin />
+              <LinkedIn size={25} />
             </Link>
             <Link
               href={"https://asqarb3k.t.me"}
               target="_blank"
               className="flex w-full items-center justify-center border-l border-r border-[#232627] px-8 py-[26.5px] hover:bg-[#232627]"
             >
-              <Send />
+              <Telegram size={25} />
             </Link>
           </div>
         </div>

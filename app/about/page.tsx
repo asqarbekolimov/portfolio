@@ -1,6 +1,6 @@
 import Button from "@/components/shared/button";
 import Footer from "@/components/shared/footer";
-import { experience } from "@/constants";
+import { experience, Skills } from "@/constants";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,6 +53,51 @@ function AboutPage() {
         </div>
       </div>
 
+      <div className="flex w-full flex-col items-center justify-center gap-20 pt-14 sm:pt-28">
+        <div className="max-w-2xl px-5">
+          <h1 className="relative z-20 py-8 text-center text-5xl font-bold tracking-wider text-transparent text-white sm:text-6xl">
+            Tech & Skills
+          </h1>
+          <p className="text-center font-sora text-base tracking-wide text-[#888A8B]">
+            About my technical skills and tools that I use in my daily work.
+          </p>
+        </div>
+        <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          {Skills.map((skill) => (
+            <div
+              key={skill.id}
+              className="group relative flex w-full items-center justify-center border border-[#232627] px-5 py-16 transition-all duration-300 ease-linear hover:cursor-pointer hover:bg-[#ffffff0d] md:py-24"
+            >
+              <div
+                className={
+                  "absolute left-0 top-0 z-30 size-3 border-l-2 border-t-2 opacity-0 transition-all duration-300 ease-linear group-hover:left-3 group-hover:top-3 group-hover:opacity-100"
+                }
+              />
+              <div
+                className={
+                  "absolute right-0 top-0 z-30 size-3 border-r-2 border-t-2 opacity-0 transition-all duration-300 ease-linear group-hover:right-3 group-hover:top-3 group-hover:opacity-100"
+                }
+              />
+              <div
+                className={
+                  "absolute bottom-0 left-0 z-30 size-3 border-b-2 border-l-2 opacity-0 transition-all duration-300 ease-linear group-hover:bottom-3 group-hover:left-3 group-hover:opacity-100"
+                }
+              />
+              <div
+                className={
+                  "absolute bottom-0 right-0 z-30 size-3 border-b-2 border-r-2 opacity-0 transition-all duration-300 ease-linear group-hover:bottom-3 group-hover:right-3 group-hover:opacity-100"
+                }
+              />
+              <div className="justify-self-end">
+                <div className="font-sourceCodePro text-lg font-normal uppercase opacity-65 transition-all duration-300 ease-linear group-hover:opacity-100">
+                  {skill.tag}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="flex w-full flex-col items-center justify-center gap-20 py-14 sm:py-28">
         <div className="max-w-2xl px-5">
           <h1 className="relative z-20 py-8 text-center text-5xl font-bold tracking-wider text-transparent text-white sm:text-6xl">
@@ -65,9 +110,9 @@ function AboutPage() {
           </p>
         </div>
         <div className="w-full">
-          {experience.map((exp, index) => (
+          {experience.map((exp) => (
             <div
-              key={index}
+              key={exp.company}
               className="grid w-full grid-cols-2 gap-y-5 border border-[#232627] px-5 py-10 sm:grid-cols-3 sm:px-24"
             >
               <div className="col-span-2 sm:col-span-1">

@@ -34,8 +34,8 @@ export default function HomePage() {
       </div>
       {/* <div className="h-px w-full bg-[#232627]" /> */}
       <div className="grid w-full grid-cols-1 justify-between xl:grid-cols-2">
-        {projects.map((project, index) => (
-          <ProjectsCard key={index} project={project} />
+        {projects.map((project) => (
+          <ProjectsCard key={project.id} project={project} />
         ))}
       </div>
 

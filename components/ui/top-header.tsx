@@ -60,7 +60,7 @@ const TopHeader = () => {
               <rect width="10" height="10" rx="5" fill="#31EE33" />
             </svg>
 
-            <div className="hidden text-sm font-semibold opacity-80 sm:block">
+            <div className="hidden font-sora text-sm text-white sm:block">
               Available for freelance projects
             </div>
           </div>

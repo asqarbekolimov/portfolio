@@ -23,8 +23,8 @@ const MobileMenu = ({ isMobileNav, handleMobileNav }: MobileMenuProps) => {
         transition: { duration: 0.5 },
       }}
     >
-      {NavItems.map((item, index) => (
-        <Link href={item.href} key={index}>
+      {NavItems.map((item) => (
+        <Link href={item.href} key={item.title}>
           <motion.div
             className={cn(
               "relative w-full border-b border-[#232627] px-10 py-7",
