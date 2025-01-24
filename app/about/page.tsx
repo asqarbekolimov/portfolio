@@ -21,7 +21,7 @@ function AboutPage() {
           <h1 className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-center text-4xl font-bold tracking-wider text-transparent sm:text-7xl">
             About Me
           </h1>
-          <p className="text-center text-base tracking-tight text-neutral-300 sm:text-xl xl:text-lg xl:tracking-normal">
+          <p className="max-w-2xl text-center text-base tracking-tight text-neutral-300 sm:text-xl xl:text-lg xl:tracking-normal">
             Discover more about me and my journey as a developer. Explore
             snippets of my personal life and things I take pride in.
           </p>
@@ -29,7 +29,7 @@ function AboutPage() {
       </div>
 
       <div className="w-full border border-[#232627] px-5 py-14 sm:px-24 sm:py-32">
-        <div className="flex flex-col-reverse items-center justify-between gap-10 sm:flex-row sm:gap-20">
+        <div className="flex flex-col-reverse items-center justify-between gap-10 sm:gap-20 md:flex-row">
           <p className="max-w-3xl font-sora text-neutral-300 sm:text-justify sm:text-xl">
             Hi! I&apos;m Askarbek. 2 years of experience, specializing in
             creating web and mobile applications using the ReactJS library. I am
