@@ -9,7 +9,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 
 export default function Home() {
-  const BLUR_FADE_DELAY = 0.5;
+  const BLUR_FADE_DELAY = 0.04;
   return (
     <main className="flex min-h-[100dvh] flex-col space-y-10">
       <section id="hero">

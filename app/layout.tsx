@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "next-themes";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import Navbar from "@/components/navbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,7 +29,12 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
