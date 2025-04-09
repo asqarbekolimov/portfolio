@@ -4,7 +4,9 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { ArrowDownToLine } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -45,6 +47,20 @@ export default function Home() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
+          <Link
+            href={"/about"}
+            className="prose max-w-full text-pretty font-sans text-sm text-primary underline dark:prose-invert"
+          >
+            more details
+          </Link>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
+          <Link href={DATA.resumeUrl}>
+            <Button variant={"secondary"} className="mt-2">
+              <ArrowDownToLine className="text-muted-foreground" />{" "}
+              <span className="font-semibold">Get Resume</span>
+            </Button>
+          </Link>
         </BlurFade>
       </section>
       <section id="work">
@@ -120,6 +136,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
                 </h2>
+
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Here are a few of my
@@ -148,9 +165,14 @@ export default function Home() {
               </BlurFade>
             ))}
           </div>
+          <div className="flex w-full items-center justify-center">
+            <Button variant={"outline"} className="text-muted-foreground">
+              more projects
+            </Button>
+          </div>
         </div>
       </section>
-      <section id="contact">
+      {/* <section id="contact">
         <div className="grid w-full items-center justify-center gap-4 px-4 py-12 text-center md:px-6">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
@@ -181,7 +203,7 @@ export default function Home() {
             </div>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { AtSignIcon, Code, HomeIcon, PencilRuler } from "lucide-react";
+import { AtSignIcon, Code, HomeIcon, User } from "lucide-react";
 
 export const DATA = {
   name: "Asqarbek Olimov",
@@ -22,10 +22,12 @@ export const DATA = {
     "API",
     "Github",
   ],
+  resumeUrl: "/resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/about", icon: User, label: "About" },
     { href: "/projects", icon: Code, label: "Projects" },
-    { href: "/blog", icon: PencilRuler, label: "Notes" },
+    // { href: "/blog", icon: PencilRuler, label: "Notes" },
     { href: "/contact", icon: AtSignIcon, label: "Contact" },
   ],
   contact: {
@@ -50,7 +52,7 @@ export const DATA = {
         name: "X",
         url: "https://x.com/asqarbekdev",
         icon: Icons.x,
-        navbar: true,
+        navbar: false,
       },
       Telegram: {
         name: "Telegram",
