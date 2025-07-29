@@ -1,11 +1,9 @@
 "use client";
-import { useTranslation } from "@/i18n/client";
-import { useParams } from "next/navigation";
+import useTranslate from "@/hooks/use-translate";
 import React from "react";
 
 function HomePage() {
-  const { lng } = useParams();
-  const { t } = useTranslation(lng as string);
+  const t = useTranslate();
   return <div>{t("welcome")}</div>;
 }
 
