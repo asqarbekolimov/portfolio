@@ -24,7 +24,7 @@ export function LngDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">
+        <Button variant="ghost">
           <Languages />
         </Button>
       </DropdownMenuTrigger>

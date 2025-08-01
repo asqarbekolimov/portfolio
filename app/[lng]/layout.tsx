@@ -6,6 +6,7 @@ import Header from "@/components/shared/header";
 import { languages } from "@/i18n/settings";
 import { ChildrenProps } from "@/types";
 import { dir } from "i18next";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,11 +37,22 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative flex min-h-screen flex-col antialiased`}
       >
         <Provider>
           <Header />
-          {children}
+          <main className="mx-auto mb-16 w-full max-w-5xl flex-1 px-4 py-24 sm:px-8">
+            {children}
+          </main>
+          <Image
+            src="/gradient-background-top.webp"
+            alt="Description of image"
+            className="absolute top-0 left-1/2 -z-10 w-full -translate-x-1/2"
+            role="presentation"
+            width={1512}
+            height={550}
+            priority
+          />
         </Provider>
       </body>
     </html>
